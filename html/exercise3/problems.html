@@ -1,10 +1,138 @@
 <html>
   
 <head>
+<script language="JavaScript">
+    function validar_respostas()
+    {
+    
+        lista_certas="";
+        lista_erradas="";
+        respostas_certas=0;
+        respostas_erradas=0;
+
+		
+        //validar pergunta 1
+        if (document.getElementById("p1op3").checked==true) 
+        {
+            respostas_certas+=1; 
+            lista_certas+="1" 
+            document.getElementById("zona_resp_p1").innerHTML = "<img src='../images/certo.png' width='15px'><b>Cópio!</b>"; 
+        }  
+        else 
+        {
+            respostas_erradas+=1; 
+            lista_erradas+="1"
+            document.getElementById("zona_resp_p1").innerHTML = "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: tinoca</b> "; 
+        }
+		 if (document.getElementById("p2op3").checked==true) 
+        {
+            respostas_certas+=1; 
+            lista_certas+="1" 
+            document.getElementById("zona_resp_p2").innerHTML = "<img src='../images/certo.png' width='15px'><b>Cópio!</b>"; 
+        }  
+        else 
+        {
+            respostas_erradas+=1; 
+            lista_erradas+="1"
+            document.getElementById("zona_resp_p2").innerHTML = "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: patarraz da ladina</b> "; 
+        }
+try
+{ 
+var x=document.getElementById("p1").value;
+if(x=="patita")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: patita</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: patita</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: patita</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("p2").value;
+if(x=="mouquinho")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mouquinho</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mouquinho</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mouquinho</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess2");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("p3").value;
+if(x=="tinoca")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: tinoca</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: tinoca</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: tinoca</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess3");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("p4").value;
+if(x=="ligadinha")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: ligadinha</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: ligadinha</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: ligadinha</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess4");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("p5").value;
+if(x=="rodilho")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: rodilho</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: rodilho</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: rodilho</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess5");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("p6").value;
+if(x=="patarraz da ladina")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: patarraz da ladina</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: patarraz da ladina</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: patarraz da ladina</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess6");
+y.innerHTML="" + err + "";
+}try
+{ 
+var x=document.getElementById("p7").value;
+if(x=="lilu")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: lilu</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: lilu</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: lilu</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess7");
+y.innerHTML="" + err + "";
+}
+}
+</script>
     <title>O Touquim Xaral</title>
-         <meta http-equiv="Content-Type" content="text/html: charset=UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html: charset=UTF-8" />
         <link rel="stylesheet" type="text/css" href="../main.css"></link>
         <link rel="stylesheet" type="text/css" href="../main-right.css"></link>
+		<link rel="stylesheet" type="text/css" href="../main-left.css"></link>
 
 </head>
 
@@ -18,44 +146,47 @@
 <div style="text-align:center;">
     <h3>A classe do touquim nº3</h3>
 </div>
-
 <p><hr align="center" color="FF4500" width="65%" height="1px" /></p>
 
 <p><b>Moinho da fonte de engenho (Ficha de exercício)</b></p>
 <p style="margin-top:0px;margin-bottom:0px;">1. A covana Carla é ramo-figueira da covana Maria.</p>
 <p style="margin-top:0px;margin-bottom:0px;">A Maria jorda uma ladina que foi jordoada Teresa.</p>  
-<p style="margin-top:0px;margin-bottom:0px;margin-left:10px;">A Carla é<input type="radio" name="ser" value="ladina da Teresa.">ladina da Teresa.</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:86px;"><input type="radio" name="ser" value="risota">risota</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:86px;"><input type="radio" name="ser" value="rodilha">rodilha</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:86px;"><input type="radio" name="ser" value="tinoca">tinoca</p>     
-
-<p style="margin-top:0px;margin-bottom:0px;">2. O meu videiro é o<textarea rows="1" cols="15"></textarea>da minha mouquinha, a mère da</p> 
-<p style="margin-top:0px;margin-bottom:0px;">videira cá da covana.</p>  
-<p style="margin-top:0px;margin-bottom:0px;margin-left:76px;"><input type="radio" name="ser" value="père">père<span style="padding-right:164px;"></span><input type="radio" name="ser" value="emanado">emanado</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:76px;"><input type="radio" name="ser" value="patarraz da ladina">patarraz da ladina<span style="padding-right:50px;"></span><input type="radio" name="ser" value="ladino">ladino</p>
-
+<div id="zona_opcoes_p1">
+<p style="margin-top:0px;margin-bottom:0px;margin-left:27px;">A Carla é <input type="radio" name="p1" id="p1op1" value="cc">ladina</input> da Teresa.</p>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:86px;"><input type="radio" name="p1" id="p1op1" value="cc">risota</input></p>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:86px;"><input type="radio" name="p1" id="p1op2" value="cc">rodilha</input></p>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:86px;"><input type="radio" name="p1" id="p1op3" value="cc">tinoca</input></p>     
+</div><br>
+<div id="zona_resp_p1"style="height:50px;">&nbsp;</div>
+<p style="margin-top:0px;margin-bottom:0px;">2. O meu videiro é o _______________ da minha mouquinha, a mère da videira cá da covana.  
+<div id="zona_opcoes_p2">
+<p style="margin-top:0px;margin-bottom:0px;margin-left:76px;"><input type="radio" name="p2" id="p2op1" value="cc">père</input>
+<span style="padding-right:130px;"></span><input type="radio" name="p2" id="p2op2" value="cc">emanado</input></p>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:76px;"><input type="radio" name="p2" id="p2op3" value="cc">patarraz da ladina</input>
+<span style="padding-right:50px;"></span><input type="radio" name="p2" id="p2op4" value="cc">ladino</input></p>
+</div><br>
+<div id="zona_resp_p2"style="height:50px;">&nbsp;</div>
 <div style=margin-top:30px;></div>
-<p style="margin-top:0px;margin-bottom:0px;">3. Jorde à garateia das da piação! (Procure as palavras!)</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:10px;">a) O ladino da ladina:<textarea rows="1" cols="40"></textarea></p>  
-<p style="margin-top:0px;margin-bottom:0px;margin-left:10px;">b) O videiro da mère:<textarea rows="1" cols="40"></textarea></p>  
-<p style="margin-top:0px;margin-bottom:0px;margin-left:10px;">c) A ramo-figueira do père:<textarea rows="1" cols="33"></textarea></p> 
-<p style="margin-top:0px;margin-bottom:0px;margin-left:10px;">d) A emanada do ramo-figueiro:<textarea rows="1" cols="27"></textarea></p>  
-<p style="margin-top:0px;margin-bottom:0px;margin-left:10px;">e) O père do emanado:<textarea rows="1" cols="38"></textarea></p>  
-<p style="margin-top:0px;margin-bottom:0px;margin-left:10px;">f) O emanado da ladina:<textarea rows="1" cols="36"></textarea></p> 
-<p style="margin-top:0px;margin-bottom:0px;margin-left:10px;">g) O covano ou a covana da vinha:<textarea rows="1" cols="24"></textarea></p> 
+<p style="margin-top:0px;margin-bottom:0px;">3. Jorde à garateia das da piação! (Procure as palavras e escreva)</p>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:10px;">a) O ladino da ladina: <input id="p1" type="text"><p></p><p id="mess"style="height:50px;">&nbsp;</p></p> 
+<p style="margin-top:0px;margin-bottom:0px;margin-left:10px;">b) O videiro da mère:  <input id="p2" type="text"><p></p><p id="mess2"style="height:50px;">&nbsp;</p></p> 
+<p style="margin-top:0px;margin-bottom:0px;margin-left:10px;">c) A ramo-figueira do père:<input id="p3" type="text"><p></p><p id="mess3"style="height:50px;">&nbsp;</p></p> 
+<p style="margin-top:0px;margin-bottom:0px;margin-left:10px;">d) A emanada do ramo-figueiro:  <input id="p4" type="text"><p></p><p id="mess4"style="height:50px;">&nbsp;</p></p> 
+<p style="margin-top:0px;margin-bottom:0px;margin-left:10px;">e) O père do emanado: <input id="p5" type="text"><p></p><p id="mess5"style="height:50px;">&nbsp;</p></p> 
+<p style="margin-top:0px;margin-bottom:0px;margin-left:10px;">f) O emanado da ladina: <input id="p6" type="text"><p></p><p id="mess6"style="height:50px;">&nbsp;</p></p>  
+<p style="margin-top:0px;margin-bottom:0px;margin-left:10px;">g) O covano ou a covana da vinha: <input id="p7" type="text"><p></p><p id="mess7"style="height:50px;">&nbsp;</p></p> 
 
 <div style="margin-top:30px"></div>
-<p style="margin-left:175px;"><img src="../images/crosswords.png" width="250px"></p>  
-
-<p style="margin-top:30px;"><img src="../images/professor.png" width="120px" align="left"></p> 
+<p style="margin-left:15px;"><img src="../images/crosswords.png" width="250px"></p>  
+<input type="button" onclick="validar_respostas()" value="Validar">
 <div style="text-align:right; margin-top:60px;">
-<p><a href="http://www.cidles.eu/ltll/labs-wordbyword">http://www.cidles.eu/ltll/labs-wordbyword</a></p> 
-</div>
-<p><hr align="right" color="#FF4500" width="70%" height="1px" /></p> 
-    
+<p style="margin-top:30px;"><img src="../images/professor.png" width="120px" align="left"></p> 
+<p><span style="padding-left:110px"><a href="../exercise3/text.html" target="_blank"><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:45px"><a href="http://www.cidles.eu/ltll/labs-wordbyword">http://www.cidles.eu/ltll/labs-wordbyword</a><span style="padding-left:45px"><a href="../exercise3/family_tree.html" target="_blank"><img src="../images/play.png" border="0" align="center"></a></p> 
+
+<p><hr align="right" color="#FF4500" width="65%" height="1px" /></p> 
 <p style="text-align:right;margin-top:0px;margin-bottom:0px;">A da classe do touquim nº3 de 12</p>
 <p style="text-align:right;margin-top:0px;margin-bottom:0px;">Colecção "As da classe do touquim da Piação d'O Touquim Xaral"</p>            
-
+</div>
 
 
 </body>

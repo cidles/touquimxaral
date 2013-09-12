@@ -1,10 +1,103 @@
 <html>       
 
 <head>
+<script language="JavaScript">
+    function validar_respostas()
+    {
+       	//validar pergunta 1
+        if (document.getElementById("p1op2").checked==true) 
+        {
+            
+            document.getElementById("zona_resp_p1").innerHTML = "<img src='../images/certo.png' width='15px'><b>Cópio!</b>"; 
+        }  
+        else 
+        {
+          
+            document.getElementById("zona_resp_p1").innerHTML = "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: de comboio</b> "; 
+        }
+		if (document.getElementById("p4op2").checked==true) 
+        {
+            
+            document.getElementById("zona_resp_p4").innerHTML = "<img src='../images/certo.png' width='15px'><b>Cópio!</b>"; 
+        }  
+        else 
+        {
+          
+            document.getElementById("zona_resp_p4").innerHTML = "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: as do anibal </b> "; 
+        }
+		if (document.getElementById("p5op1").checked==true) 
+        {
+            
+            document.getElementById("zona_resp_p5").innerHTML = "<img src='../images/certo.png' width='15px'><b>Cópio!</b>"; 
+        }  
+        else 
+        {
+          
+            document.getElementById("zona_resp_p5").innerHTML = "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: andarilhos </b> "; 
+        }
+		try
+	{ 
+	var x=document.getElementById("p2").value;
+	if(x=="Não os charales jordarem num vaz neto")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(x=="Não, os charales jordarem num vaz neto")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Não, os charales jordarem num vaz neto</b>";
+	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Não, os charales jordarem num vaz neto</b>";
+	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Não, os charales jordarem num vaz neto</b>";
+	}
+	catch(err)
+	{
+	var y=document.getElementById("mess2");
+	y.innerHTML="" + err + "";
+	}
+		try
+	{ 
+	var x=document.getElementById("p3").value;
+	if(x=="O covano jorda a do aníbal")    throw "3.1-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(x=="O covano jorda a do aníbal.")    throw "3.1-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(isNaN(x)) throw "3.1-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano jorda a do aníbal.</b>";
+	if(x>10)     throw "3.1-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano jorda a do aníbal.</b>";
+	if(x<5)      throw "3.1-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano jorda a do aníbal.</b>";
+	}
+	catch(err)
+	{
+	var y=document.getElementById("mess3");
+	y.innerHTML="" + err + "";
+	}
+		try
+	{ 
+	var x=document.getElementById("p6").value;
+	if(x=="A covana jorda os balões com licas")    throw "3.2-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(x=="A covana jorda os balões com licas.")    throw "3.2-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(isNaN(x)) throw "3.2-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: A covana jorda os balões com licas.</b>";
+	if(x>10)     throw "3.2-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: A covana jorda os balões com licas.</b>";
+	if(x<5)      throw "3.2-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: A covana jorda os balões com licas.</b>";
+	}
+	catch(err)
+	{
+	var y=document.getElementById("mess6");
+	y.innerHTML="" + err + "";
+	}
+		try
+	{ 
+	var x=document.getElementById("P7").value;
+	if(x=="O covano desliza")    throw "3.3-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(x=="O covano desliza.")    throw "3.3-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(isNaN(x)) throw "3.3-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano desliza.</b>";
+	if(x>10)     throw "3.3-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano desliza.</b>";
+	if(x<5)      throw "3.3-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano desliza.</b>";
+	}
+	catch(err)
+	{
+	var y=document.getElementById("mess7");
+	y.innerHTML="" + err + "";
+	}
+	}
+</script>	
         <title>O Touquim Xaral</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" type="text/css" href="../main.css"></link>
-        <link rel="stylesheet" type="text/css" href="../main-left.css"></link>
+          <link rel="stylesheet" type="text/css" href="../main-right.css"></link>
+		<link rel="stylesheet" type="text/css" href="../main-left.css"></link>
      
 </head>
 
@@ -17,48 +110,45 @@
 <div style="margin-top:50px;"></div>
 <p style="margin-top:0px;margin-bottom:0px;"><b>Moinho da fonte de engenho (Ficha de exercício)</b></p>
 <p style="margin-top:0px;margin-bottom:0px;">1.Como é que o Paulo e a Teresa jordarem ao Segundo Casal Grande?</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="transportar" value="de bicicleta">de bicicleta</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="transportar" value="de comboio">de comboio</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="transportar" value="de metro">de metro</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="transportar" value="de autocarro">de autocarro</p>
+<div id="zona_opcoes_p1">
+<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="p1" id="p1op1" value="cc">bicicleta</input></br>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="p1" id="p1op2" value="dc">de comboio</input></br>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="p1" id="p1op3" value="dc">de metro</input><br>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="p1" id="p1op4" value="dc">de autocarro</input><br>
+</div><br>
+<div id="zona_resp_p1" style="height:50px;"> &nbsp </div>
 
 <div style="margin-top:30px;"></div>
 <p style="margin-top:0px;margin-bottom:0px;">2.Os charales jordarem as do joão das penhas da classe do meira até à</p>
-<p style="margin-top:0px;margin-bottom:0px;">classe de tarrantar?</p>
-<p><textarea rows="1" cols="80"></textarea></p>
+<p style="margin-top:0px;margin-bottom:0px;">classe de tarrantar?</p><br>
+<input id="p2" type="text"style="width:280px;"><p></p>
+<p id="mess2" style="height:50px;">&nbsp;</p>
 
 <div style="margin-top:30px;"></div>
 <p>3.Como jordem nas d'el-rei os covanos das alexandrinas?</p>
-<p style="margin-left:30px;"><img src="../images/bike_kid.png" width="120" height="120"> <span style="padding-right:60px;"></span>
-<img src="../images/running.png" width="120" height="120"> <span style="padding-right:60px;"></span>
-<img src="../images/boat.png" width="120" height="120"></p> 
+<p style="margin-left:30px;"><img src="../images/bike_kid.png" width="120" height="100"> <span style="padding-right:50px;"></span>
+<img src="../images/running.png" width="120" height="100"> <span style="padding-right:50px;"></span>
+<img src="../images/boat.png" width="120" height="100"></p> 
 
-<p style="margin-left:30px;"><textarea rows="1" cols="15"></textarea> <span style="padding-right:50px;"></span>
-<textarea rows="1" cols="15"></textarea> <span style="padding-right:60px;"></span>
-<textarea rows="1" cols="15"></textarea></p> 
-
+<p style="margin-left:0px;">1<input id="P3" type="text"><span style="padding-right:5px;"></span>
+2<input id="p6" type="text"> <span style="padding-right:5px;"></span>
+3<input id="p7" type="text"></p> 
+<p id="mess3"style="height:50px;">&nbsp;</p>
+<p id="mess6"style="height:50px;">&nbsp;</p>
+<p id="mess7"style="height:50px;">&nbsp;</p>
 <p style="margin-top:0px;margin-bottom:0px;">4.No Ninhou mirantamos nas d'el-rei:</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="transportar" value="rinchões">rinchões</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="transportar" value="as do aníbal">as do aníbal</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="transportar" value="rinchões de nisa">rinchões de nisa</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="transportar" value="andarilhos">andarilhos</p>
-
+<div id="zona_opcoes_p4">
+<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="p4" id="p4op1" value="cc">rinchões</input></br>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="p4" id="p4op2" value="dc">as do aníbal</input></br>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="p5" id="p5op2" value="dc">rinchões de nisa</input><br>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="p5" id="p5op1" value="dc">andarilhos</input><br>
+</div><br>
+<div id="zona_resp_p4"style="height:50px;">&nbsp;</div>
+<div id="zona_resp_p5"style="height:50px;">&nbsp;</div>
 <div style="margin-top:20px;"></div>
-<p style="margin-top:0px;margin-bottom:0px;">Piações cópias do moinho da fonte de engenho nº9</p>
-<p style="margin-top:0px;margin-bottom:0px;">(Soluções do exercício nº9)</p> 
-
 <div style="margin-top:20px;"></div>
-<font size="2">
-<p style="margin-top:0px;margin-bottom:0px;">1.<span style="padding-right:10px"></span>2 (escama de baiucas do invisível)</p>
-<p style="margin-top:0px;margin-bottom:0px;">2.<span style="padding-right:10px"></span>baiuca de tarrantar</p>
-<p style="margin-top:0px;margin-bottom:0px;">3.<span style="padding-right:3px"></span>(1)caruta do parreiral</p>  
-<p style="margin-top:0px;margin-bottom:0px;margin-left:15px">(2)a da cal</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:15px">(3)couceira / a do lérias</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:15px">(4)a da classe fusca</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:15px">(5)clareira</p>
-</font>
-
 <div style="margin-top:20px;"></div>
+<p><a href="text_transports.html" target="_blank"><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:90px"><input type="button" onclick="validar_respostas()" value="Validar"><span style="padding-left:120px"><a href="../exercise11/institutions_jobs.html" target="_blank"><img src="../images/play.png" border="0" align="center"></a></p>
 <p><hr align="left" color="#FF4500" width="50%" height="1px" /></p> 
 <p>Separata do Jornal de Minde</p>     
 

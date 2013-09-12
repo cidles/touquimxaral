@@ -1,10 +1,68 @@
 <html>
   
 <head>
+<script language="JavaScript">
+    function validar_respostas()
+{
+	try
+	{ 
+	var x=document.getElementById("p1").value;
+	if(x=="chavequeiro")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: chavequeiro</b>";
+	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: chavequeiro</b>";
+	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: chavequeiro</b>";
+	}
+	catch(err)
+	{
+	var y=document.getElementById("mess1");
+	y.innerHTML="" + err + "";
+	}
+	try
+	{ 
+	var x=document.getElementById("p2").value;
+	if(x=="berlícua")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: berlícua</b>";
+	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: berlícua</b>";
+	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: berlícua</b>";
+	}
+	catch(err)
+	{
+	var y=document.getElementById("mess2");
+	y.innerHTML="" + err + "";
+	}
+	try
+	{ 
+	var x=document.getElementById("p3").value;
+	if(x=="mestre-régio")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mestre-régio</b>";
+	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mestre-régio</b>";
+	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mestre-régio</b>";
+	}
+	catch(err)
+	{
+	var y=document.getElementById("mess3");
+	y.innerHTML="" + err + "";
+	}	
+	try
+	{	 
+	var x=document.getElementById("p4").value;
+	if(x=="cardosas")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas</b>";
+	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas</b>";
+	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas</b>";
+	}
+	catch(err)
+	{
+	var y=document.getElementById("mess4");
+	y.innerHTML="" + err + "";
+	}
+}
+</script>
         <title>O Touquim Xaral</title>
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
             <link rel="stylesheet" type="text/css" href="../main.css"></link>
-            <link rel="stylesheet" type="text/css" href="../main-right.css"></link>   
+              <link rel="stylesheet" type="text/css" href="../main-right.css"></link>
+		<link rel="stylesheet" type="text/css" href="../main-left.css"></link> 
 
 </head>
 
@@ -14,33 +72,26 @@
 <div style="margin-top:50px;"></div>
 <div style="text-align:center;">
     <h3>A da classe do touquim nº6</h3>
-</div>
 
 <p><hr align="center" color="#FF4500" width="65%" height="1px" /></p>   
-
 <div style="margin-top:50px;"></div>
 <p style="margin-top:0px;margin-bottom:0px;"><b>Moinho da fonte de engenho (Ficha de exercício)</b></p>
-<p style="margin-top:0px;margin-bottom:0px;">1. Como foram jordadas as do mestre-grosso que mirantas</p>
-<p style="margin-top:0px;margin-bottom:0px;">na alexandrina?</p>
-
-<div style="margin-top:30px;"></div>
-<p style="margin-left:25px;">1.<!--<textarea rows="1" cols="20"></textarea>--><input type="text" size="20" /></p>
-
-<div style="margin-top:10px;"></div>
-<img src="../images/new_dressman.png" align="top"><span style="padding-right:50px;"></span>2.<input type="text" size="20" />
-<p style="margin-top:0px;margin-bottom:0px;margin-left:200px;">3.<input type="text" size="20" /></p>
-
-<div style="margin-top:10px;"></div> 
-<p style="margin-left:25px;">4.<input type="text" size="20" /></p>               
-
+<p style="margin-top:0px;margin-bottom:0px;">1. Como foram jordadas as do mestre-grosso que mirantas na alexandrina?</p>
+<img src="../images/dress_man1.png" align="top">
+<br>
+1.<input id="p1" type="text"><p></p><p id="mess1"style="height:50px;">&nbsp;</p>
+2.<input id="p2" type="text" align="right"><p></p><p id="mess2"style="height:50px;">&nbsp;</p>
+3.<input id="p3" type="text"><p></p><p id="mess3"style="height:50px;">&nbsp;</p>
+4.<input id="p4" type="text"><p></p><p id="mess4"style="height:50px;">&nbsp;</p>              
+<input type="button" onclick="validar_respostas()" value="Validar">
 <p style="margin-top:50px;"><img src="../images/professor.png" align="left">
-<div style="text-align:right;margin-top:50px;"><a href="http://www.cidles.eu/ltll/labs-wordbyword">http://www.cidles.eu/ltll/labs-wordbyword</a></div></p>
+<p><span style="padding-left:120px"><a href="../exercise6/clothes_text.html" target="_blank"><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:55px"><a href="http://www.cidles.eu/ltll/labs-wordbyword">http://www.cidles.eu/ltll/labs-wordbyword</a><span style="padding-left:45px"><a href="../exercise6/complete_text.html" target="_blank"><img src="../images/play.png" border="0" align="center"></a></p>
 <p><hr align="right" color="FF4500" width="65%" height="1px" /></p>
 
 <p style="text-align:right;margin-top:0px;margin-bottom:0px;">A da classe do touquim nº6 de 12</p>
 <p style="text-align:right;margin-top:0px;margin-bottom:0px;">Colecção "As da classe do touquim da Piação d'O Touquim Xaral"</p>    
 
-   
+   </div>
 
        
            

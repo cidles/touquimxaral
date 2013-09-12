@@ -5,8 +5,82 @@
     <title>O Touquim Xaral</title>
         <meta http-equiv="Content-Type" content="text/html: charset=UTF-8" />
         <link rel="stylesheet" type="text/css" href="../main.css"></link>
-        <link rel="stylesheet" type="text/css" href="../main-left.css"></link>
+        <link rel="stylesheet" type="text/css" href="../main-right.css"></link>
+		<link rel="stylesheet" type="text/css" href="../main-left.css"></link>
+<script language="JavaScript">
+    function validar_respostas()
+    {
+   
+       // lista_certas="";
+        //lista_erradas="";
+        //respostas_certas=0;
+        //respostas_erradas=0;
 
+		
+        //validar pergunta 1
+        if (document.getElementById("p1op3").checked==true) 
+        {
+         
+            document.getElementById("zona_resp_p1").innerHTML = "<img src='../images/certo.png' width='15px'><b>Cópio!</b>"; 
+        }  
+        else 
+        {
+         document.getElementById("zona_resp_p1").innerHTML = "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: macovilho de zaburro</b> "; 
+        }
+try
+{ 
+var x=document.getElementById("p1").value;
+ if(x=="agoirento")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: agoirento</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: agoirento</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: agoirento</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess1");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("p2").value;
+if(x=="cabaneira")throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cabaneira</b>" ;
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cabaneira</b>" ;
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cabaneira</b>" ;
+}
+catch(err)
+{
+var y=document.getElementById("mess2");
+y.innerHTML=" " + err + "";
+}
+try
+{ 
+var x=document.getElementById("p3").value;
+if(x=="sequeiro")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: sequeiro</b>" ;
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: sequeiro</b>" ;
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: sequeiro</b>" ;
+}
+catch(err)
+{
+var y=document.getElementById("mess3");
+y.innerHTML=" " + err + "";
+}
+try
+{ 
+var x=document.getElementById("p4").value;
+if(x=="salteador")throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa:salteador</b> " ;
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: salteador</b>" ;
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: salteador</b>" ;
+}
+catch(err)
+{
+var y=document.getElementById("mess4");
+y.innerHTML=" " + err + "";
+}
+}  
+</script>
 </head>
 
 
@@ -24,50 +98,28 @@
 
 <div style="margin-top:30px;"></div>
 <p>1. O que jordava a celeireira nos cortiços?</p>
+<div id="zona_opcoes_p1">
+<br><input type="radio" name="p1" id="p1op1" value="cc">camareta</input>
+<br><input type="radio" name="p1" id="p1op2" value="dc">borra do cinqueto</input>
+<br><input type="radio" name="p1" id="p1op3" value="dc">macovilho de zaburro</input>
+<br><input type="radio" name="p1" id="p1op4" value="dc">sal do brasil</input>
+</div><br>
+<div id="zona_resp_p1"style="height:50px;">&nbsp;</div>
 
-<div style="margin-top:20px;"></div>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:100px;"><input type="radio" name="gostar" value="camareta">camareta</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:100px;"><input type="radio" name="gostar" value="borra do cinqueto">borra do cinqueto</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:100px;"><input type="radio" name="gostar" value="macovilho de zaburro">macovilho de zaburro</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:100px;"><input type="radio" name="gostar" value="sal do brasil">sal do brasil</p>
-
-<div style="margin-top:20px;"></div>
 <p>2. Como foram jordoados os do noé das alexandrinas?</p>    
-
+<p><img src="../images/eagle_owl.png" width="80"><br>1.<input id="p1" type="text"><p></p><p id="mess1"style="height:50px;">&nbsp;</p>
+<span style="margin-top:50px;"></span>
+<img src="../images/cow.png" width="150"><br>2.<input id="p2" type="text"><p id="mess2"style="height:50px;">&nbsp;</p></p>  
 <div style="margin-top:30px;"></div>
-<p><img src="../images/eagle_owl.png" width="80">1.<textarea rows="1" cols="20"></textarea> <span style="padding-right:30px;"></span>
-<img src="../images/cow.png" width="150">2.<textarea rows="1" cols="20"></textarea> </p>  
-
-<div style="margin-top:30px;"></div>
-
-<p><img src="../images/cat.png" width="90">3.<textarea rows="1" cols="20"></textarea> <span style="padding-right:30px;"></span>
-<img src="../images/frog.png" width="150">4.<textarea rows="1" cols="20"></textarea> </p>  
+<p><img src="../images/cat.png" width="90"><br>3.<input id="p3" type="text"><p id="mess3"style="height:50px;">&nbsp;</p><span style="margin-top:30px;"></span>
+<img src="../images/frog.png" width="150"><br>4.<input id="p4" type="text"><p id="mess4"style="height:50px;">&nbsp;</p> </p>  
 
 <div style="margin-top:20px;"></div>
 
 <p>3.Qual a do noé de que és antónio forno ancho?</p>
 <p><textarea rows="1" cols="80"></textarea> </p>
-
-<p style="margin-top:0px;margin-bottom:0px;"><b>Piações cópias do moinho da fonte de engenho nº11</b></p>
-<p style="margin-top:0px;margin-bottom:0px;"><b>(Soluções do exercício nº11)</b></p>
-
-<div style="margin-top:20px;"></div>
-
-<font size="2">
-<p>1. A zegrega jordou do dragão</p>
-
 <div style="margin-top:30px;"></div>
-<p>2. maria-dois</p>
-
-<div style="margin-top:30px;"></div>
-<p style="margin-top:0px;margin-bottom:0px;">3. (1)classe de tosar o de arraiolos <span style="padding-right:30px;"></span>(5)umbelina</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:15px;">(2)classe do neto <span style="padding-right:130px;"></span>(6)classe das corridas</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:15px;">(3)chave d'ouro <span style="padding-right:140px;"></span>(7)classe da achega</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:15px;">(4)classe de são josé <span style="padding-right:105px;"></span>(8)classe ancha dos soletras</p>
-
-</font>
-
-<div style="margin-top:30px;"></div>
+<p><a href="text_animals.html" target="_blank"><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:90px"><input type="button" onclick="validar_respostas()" value="Validar"><span style="padding-left:120px"><a href="../exercise13/money_numbers.html" target="_blank"><img src="../images/play.png" border="0" align="center"></a></p>
 <p><hr align="left" color="#FF4500" width="50%" height="1px" /></p> 
 <p>Separata do Jornal de Minde</p>     
 

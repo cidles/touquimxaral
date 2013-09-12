@@ -1,65 +1,168 @@
 <html>
          
 <head>
+<link rel="stylesheet" type="text/css" href="exercise.css" />
+<script language="JavaScript">
+    function validar_respostas()
+    {
+    
+        lista_certas="";
+        lista_erradas="";
+        respostas_certas=0;
+        respostas_erradas=0;
+
+		
+        //validar pergunta 1
+        if (document.getElementById("p1op1").checked==true) 
+        {
+             
+            document.getElementById("zona_resp_p1").innerHTML = "<img src='../images/certo.png' width='15px'><b>Cópio!</b>";  
+        }  
+        else 
+        {
+            
+            document.getElementById("zona_resp_p1").innerHTML = "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cópio</b> "; 
+        }
+		
+        if (document.getElementById("p2op2").checked==true) 
+        { 
+            
+            
+            document.getElementById("zona_resp_p2").innerHTML = " <img src='../images/certo.png' width='15px'><b>Cópio!</b>"; 
+        }
+        else
+        {
+          
+            document.getElementById("zona_resp_p2").innerHTML = "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: a-treme-terras</b> "; 
+        }
+		
+        if (document.getElementById("p3op1").checked==true) 
+        { 
+             
+            
+            document.getElementById("zona_resp_p3").innerHTML = "<img src='../images/certo.png' width='15px'><b>Cópio!</b>"; 
+        }
+        else
+        {
+            
+            document.getElementById("zona_resp_p3").innerHTML = "<img src='../images/errado.png' width='15px'><b> Didi, resposta certa: Planeta cópio</b> "; 
+        }
+		 if (document.getElementById("p4op2").checked==true) 
+        { 
+          
+            
+            document.getElementById("zona_resp_p4").innerHTML = "<img src='../images/certo.png' width='15px'><b>Cópio!<b>"; 
+        }
+        else
+        {
+            
+            document.getElementById("zona_resp_p4").innerHTML = "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Fui jordoada Ana e jordo 12 plantas anchos</b> "; 
+        }
+		
+try
+{ 
+var x=document.getElementById("p1").value;
+var y = x.split(" ");
+if (y[0]=="Aqui"){ 
+		if ( (y[1]=="o" && y[2] == "covano") || (y[1]=="a" && y[2] == "covana")){
+			if (y[3]=="foi"){
+				if (y[4]=="jordoado" || y[4]=="jordoada"){ 
+					if (y[6]=="e"){ 
+						if (y[7]=="jordo"){ 
+							if (y[9]=="planetas"){
+								if (y[10]=="anchos" || y[10]=="anchos."){ 
+									throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Aqui o/a covano/a foi jordoado/a (NOME) e jordo (IDADE) planetas anchos.</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Aqui o/a covano/a foi jordoado/a (NOME) e jordo (IDADE) planetas anchos.</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Aqui o/a covano/a foi jordoado/a (NOME) e jordo (IDADE) planetas anchos.</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess");
+y.innerHTML="" + err + "";
+}
+
+
+    }
+		   
+</script>
 
     <title>Moinho da fonte de engenho (Ficha de exercício)</title> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link rel="stylesheet" type="text/css" href="../main-left.css"></link>
+        <link rel="stylesheet" type="text/css" href="../main-right.css"></link>
+		<link rel="stylesheet" type="text/css" href="../main-left.css"></link>
         <link rel="stylesheet" type="text/css" href="../main.css"></link>
+		<script LANGUAGE="Javascript1.1">
 
+</script>
 </head>
-             
+         
 <body>
-
+    
 <h3>Moinho da fonte de engenho (Ficha de exercício)</h3>   
-<p style="padding-right:350px;"><img src="../images/kid.png" width="120px" align="right"></p>
 
-<p>1. Como jorda o xaral?</p>     
+<br><p style="padding-right:320px;"><img src="../images/kid.gif" width="80px" height="70px" align="right"></p>
+<BR>1. Como jorda o xaral?</BR>
+<div id="zona_opcoes_p1">
+<br><input type="radio" name="p1" id="p1op1" value="cc">cópio</input>
+<br><input type="radio" name="P1" id="p1op2" value="dc">didi</input>
+<br><input type="radio" name="P1" id="p1op3" value="dc">lince</input>
+</div><p></p>
+<div id="zona_resp_p1"style="height:50px;">&nbsp;</div>
 
-<p style="margin-top:0px;margin-bottom:0px;">O xaral jorda...</p>    
-<input type="radio" name="estar" value="cópio.">cópio.<br/>
-<input type="radio" name="estar" value="didi.">didi.<br/>
-<input type="radio" name="estar" value="lince.">lince.<br/>  
-<p style="padding-right:290px;"><img src="../images/kids.png" width="120px" height="120px" align="right"></p>
-
+<p style="padding-right:320px;"><img src="../images/KIDS.gif" width="80px" height="70px" align="right"></p>
 <p>2. O que pia a covana?</p>
- 
-<p style="margin-top:0px;margin-bottom:0px;">A covana pia...</p>               
-<input type="radio" name="falar" value="bonza-me.">bonza-me.<br/>
-<input type="radio" name="falar" value="a-treme-terras.">a-treme-terras.<br/>
-<input type="radio" name="falar" value="como jorda a maqueda.">como jorda a maqueda?<br/>
+<p style="margin-top:0px;margin-bottom:0px;">A covana pia...</p><br>
+<div id="zona_opcoes_p2">	
+<input type="radio" name="p2" id="p2op1" value="cc">como jorda a maqueda?</input>
+<BR><input type="radio" name="p2" id="p2op2" value="dc">a-treme-terras</input>            
+<BR><input type="radio" name="p2" id="p2op3" value="dc">bonza-me</input> 
+</div><p></p>
+<div id="zona_resp_p2"style="height:50px;">&nbsp;</div>
 
+<p style="padding-right:320px;"><img src="../images/RELOGIO.gif" width="80px" height="70px" align="right"></p>
 <p>3. O que se pia a esta do bandarra?</p>
-<p style="padding-right:350px;"><img src="../images/hours.png" width="120px" height="70px" align="right"></p> 
-<input type="radio" name="horas" value="Planeta cópio.">Planeta cópio.<br/>
-<input type="radio" name="horas" value="Fusca cópia.">Fusca cópia.<br/>
-<input type="radio" name="horas" value="Cópio planeta.">Cópio planeta.<br/>  
+
+<div id="zona_opcoes_p3">
+<BR><input type="radio" name="p3" id="p3op1" value="cc">Planeta cópio</input>
+<BR><input type="radio" name="p3" id="p3op2" value="dc">Fusca cópia</input>              
+<BR><input type="radio" name="p3" id="p3op3" value="dc">Cópio planeta</input>           
+</div><p></p>
+<div id="zona_resp_p3"style="height:50px;">&nbsp;</div>
 <p style="padding-right:200px;"><img src="../images/bubble.png" width="120px" align="right"></p>
 
-<p style="padding-right:320px;"><img src="../images/ana.png" width="80px" height="70px" align="right"></p>
+<p style="padding-right:320px;"><img src="../images/ANA.gif" width="80px" height="70px" align="right"></p>
 <p>4. O que pia a terraizinha?</p>
-<input type="radio" name="dizer" value="Mirantei a borboleta como Ana<br/>e engenho 12 planetas anchos.">Mirantei a borboleta como Ana<br/>
-e engenho 12 planetas anchos.<br/>
-<input type="radio" name="dizer" value="Fui jordoada Ana e mirantei a borboleta no planeta 12.">Fui jordoada Ana e mirantei a borboleta no planeta 12.<br/>
-<input type="radio" name="dizer" value="Fui jordoada Ana e jordo 12 planetas anchos.">Fui jordoada Ana e jordo 12 planetas anchos.<br/>
-
-<p>5. E tu? Como foste jordoado/a e quantos planetas anchos jordas?</p>
+<div id="zona_opcoes_p4">
+<BR><input type="radio" name="p4" id="p4op1" value="cc">Mirantei a borboleta como Ana <br>e engenho 12 planetas anchos</input>
+<BR><input type="radio" name="p4" id="p4op2" value="dc">Fui jordoada Ana e mirantei a borboleta no planeta 12</input>          
+<BR><input type="radio" name="p4" id="p4op3" value="dc">Fui jordoada Ana e jordo 12 planetas anchos</input>
+</div><p></p>
+<div id="zona_resp_p4"style="height:50px;">&nbsp;</div>
+<br>
+<p>5. E aí o/a covano/a? Como foste jordoado/a e quantos planetas anchos jordas?</p>
 <div style="margin-top:40px;"></div>
-<textarea rows="2" cols="65">
-</textarea>
-<div style="margin-top:100px;"></div>
-<p><hr width="60%" align="left" color="#FF4500" height="1px"></p>
+<input id="p1" type="text" style="width:380px;" ><p></p>
+<p id="mess"style="height:50px;">&nbsp;</p>
+<br><br>
+<a href="meeting_dialogue.html" target="_blank"><img src="../images/play2.png" border="0"align="center"></a><span style="padding-left:125px">
+<input type="button" onclick="validar_respostas()" value="Validar"align="center"><span style="padding-left:145px">
+<a href="../exercise2/time.html" target="_blank"><img src="../images/play.png" border="0" align="center"></a>
 
+<p><hr width="60%" align="left" color="#FF4500" height="1px"></p>
 <p style="text-align:left;">Separata do Jornal de Minde</p>
    
                               
      
 </body>
-
-  
-
-
-
 </html> 
 
 

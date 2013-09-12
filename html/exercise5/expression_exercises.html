@@ -4,10 +4,96 @@
         <title>O Touquim Xaral</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" type="text/css" href="../main.css"></link>
-        <link rel="stylesheet" type="text/css" href="../main-left.css"></link>
+        <link rel="stylesheet" type="text/css" href="../main-right.css"></link>
+		<link rel="stylesheet" type="text/css" href="../main-left.css"></link>
      
 </head>
-
+<script>
+function myFunction()
+{
+try
+{ 
+var x=document.getElementById("p1").value;
+if(x=="covano ancho e folacho")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="covano folacho e ancho")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano ancho e folacho</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano ancho e folacho</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano ancho e folacho</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("p2").value;
+if(x=="covano caga-tacos")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="covano teodorinho")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano caga-tacos / covano teodorinho</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano caga-tacos / covano teodorinho</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano caga-tacos / covano teodorinho</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess2");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("p3").value;
+if(x=="covana jaquininha e com um talha-mar ancho pra diante")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana jaquininha e com um talha-mar ancho pra diante</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana jaquininha e com um talha-mar ancho pra diante</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana jaquininha e com um talha-mar ancho pra diante</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess3");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("p4").value;
+if(x=="covana com rodapé")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="covana com Zé-pedro")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana com rodapé / covana com Zé-pedro</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana com rodapé / covana com Zé-pedro</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana com rodapé /covana com Zé-pedro</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess4");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("p5").value;
+if(x=="terraizinha a regatinhar dos mirantes")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: terraizinha a regatinhar dos mirantes</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: terraizinha a regatinhar dos mirantes</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: terraizinha a regatinhar dos mirantes</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess5");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("p6").value;
+if(x=="gâmbia com as arranhadoras da gâmbia anchas")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: gâmbia com as arranhadoras da gâmbia anchas</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: gâmbia com as arranhadoras da gâmbia anchas</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: gâmbia com as arranhadoras da gâmbia anchas</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess6");
+y.innerHTML="" + err + "";
+}
+}
+</script>
 <body>
 <div align="center">
     <h3>A da classe do touquim nº5</h3>
@@ -25,25 +111,15 @@
 
 <div style="margin-top:20px;"></div>
 <p>O que mirantas nas alexandrinas?</p>
-<p><span style="padding-right:25px;"></span><img src="../images/glasses.png" width="80px">1.<textarea rows="1" cols="20"></textarea>
-<span style="padding-right:65px;"></span><img src="../images/glasses.png" width="80px">2.<textarea rows="1" cols="20"></textarea> </p> 
+<p><span style="padding-right:25px;"></span><img src="../images/folacho.png" width="60px"><br>1.<input id="p1" type="text"style="width:280px;"><p id="mess"style="height:50px;">&nbsp;</p>
+<span style="padding-right:25px;"></span><img src="../images/glasses.png" width="60px"><br>2.<input id="p2" type="text"style="width:280px;"><p></p><p id="mess2"style="height:50px;">&nbsp;</p> <br>
 
-<p><img src="../images/fat.png" width="100px">3.<textarea rows="1" cols="20"></textarea>
-<span style="padding-right:50px;"></span><img src="../images/lips.png" width="100px">4.<textarea rows="1" cols="20"></textarea> </p>       
+<p><img src="../images/fat.gif" width="100px"><br>3.<input id="p3" type="text"style="width:280px;"><p></p><p id="mess3"style="height:50px;">&nbsp;</p>
+<span style="padding-right:50px;"></span><img src="../images/lips.png" width="100px"><br>4.<input id="p4" type="text"style="width:280px;"><p></p><p id="mess4"style="height:50px;">&nbsp;</p>
+<p><span style="padding-right:20px;"></span><img src="../images/cry.gif" width="80px"><br>5.<input id="p5" type="text"style="width:280px;"><p></p><p id="mess5"style="height:50px;">&nbsp;</p>
+<span style="padding-right:35px;"></span><img src="../images/nails.png" width="120px"><br>6.<input id="p6" type="text"style="width:280px;"><p></p><p id="mess6"style="height:50px;">&nbsp;</p>
 
-<p><span style="padding-right:20px;"></span><img src="../images/cry.png" width="80px">5.<textarea rows="1" cols="20"></textarea>
-<span style="padding-right:35px;"></span><img src="../images/nails.png" width="120px">6.<textarea rows="1" cols="20"></textarea> </p>
-
-<div style="margin-top:80px;"></div>
-<p><font size="2"><b>Piações cópias do moinho da fonte de engenho nº4 (Soluções do exercício nº4)</b></p>
-<div style="margin-top:20px;"></div>
-<p style="margin-top:0px;margin-bottom:0px;">1. Terruja de Santa Cruz</p>
-<p style="margin-top:0px;margin-bottom:0px;">2. Jardim do Camões/Terruja do Camões e Pregal da Joana</p>  
-<p style="margin-top:0px;margin-bottom:0px;">3. - (Paris) Pregal da Joana - Ninhou (no Jardim do Camões)</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:15px;">- Casal Grande (no Jardim do Camões) - (Londres) Pregal dos Jones/Pregal das Louras</p>
-
-</font>
-<div style="margin-top:50px;"></div>
+<p><a href="more_human_body.html" target="_blank"><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:130px"><input type="button" onclick="myFunction()" value="Validar"><span style="padding-left:140px"><a href="../exercise6/clothes.html" target="_blank"><img src="../images/play.png" border="0" align="center"></a></p>
 <p><hr align="left" color="#FF4500" width="60%" height="1px" /></p> 
 <p>Separata do Jornal de Minde</p>  
 

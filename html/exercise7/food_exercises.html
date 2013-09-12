@@ -1,10 +1,89 @@
 <html>
 
 <head>
-        <title>O Touquim Xaral</title>
+<script language="JavaScript">
+    function validar_respostas()
+    {
+    
+        lista_certas="";
+        lista_erradas="";
+        respostas_certas=0;
+        respostas_erradas=0;
+
+		
+        //validar pergunta 1
+        if (document.getElementById("p1op3").checked==true) 
+        {
+            respostas_certas+=1; 
+            lista_certas+="1" 
+            document.getElementById("zona_resp_p1").innerHTML = "<img src='../images/certo.png' width='15px'><b>Cópio!</b>"; 
+        }  
+        else 
+        {
+            respostas_erradas+=1; 
+            lista_erradas+="1"
+            document.getElementById("zona_resp_p1").innerHTML = "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Polvo assado</b> "; 
+        }
+		 if (document.getElementById("p2op4").checked==true) 
+        {
+            respostas_certas+=1; 
+            lista_certas+="1" 
+            document.getElementById("zona_resp_p2").innerHTML = "<img src='../images/certo.png' width='15px'><b>Cópio!</b>"; 
+        }  
+        else 
+        {
+            respostas_erradas+=1; 
+            lista_erradas+="1"
+            document.getElementById("zona_resp_p2").innerHTML = "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: com arroz e cenoura</b> "; 
+        }
+		try
+{ 
+var x=document.getElementById("p3").value;
+if(x=="marco da portela")    throw "1-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "1-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: marco da portela</b>";
+if(isNaN(x)) throw "1-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: marco da portela</b>";
+if(x>10)     throw "1-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: marco da portela</b>";
+if(x<5)      throw "1-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: marco da portela</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess3");
+y.innerHTML=" " + err + "";
+}
+		try
+{ 
+var x=document.getElementById("p4").value;
+if(x=="galízio")    throw "2-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "2-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: galízio </b>";
+if(x>10)     throw "2-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: galízio</b>";
+if(x<5)      throw "2-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: galízio</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess4");
+y.innerHTML=" " + err + "";
+}
+		try
+{ 
+var x=document.getElementById("p5").value;
+if(x=="mimosas")    throw "<3-img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "3-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mimosas </b>";
+if(x>10)     throw "3-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mimosas</b>";
+if(x<5)      throw "3-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mimosas</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess5");
+y.innerHTML=" " + err + "";
+}
+}
+</script>		
+ 
+		<title>O Touquim Xaral</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" type="text/css" href="../main.css"></link>
-        <link rel="stylesheet" type="text/css" href="../main-left.css"></link>
+          <link rel="stylesheet" type="text/css" href="../main-right.css"></link>
+		<link rel="stylesheet" type="text/css" href="../main-left.css"></link>
      
 </head>
 
@@ -22,46 +101,40 @@
 <p style="margin-top:0px;margin-bottom:0px;">1. O que vai trilhar a covana do moinho da fonte que soletraste?</p>
 </div>
 
-<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="comer" value="Bacalhau assado">Bacalhau assado</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="comer" value="Bacalhau cozido">Bacalhau cozido</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="comer" value="Polvo assado">Polvo assado</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="comer" value="Polvo cozido">Polvo cozido</p>    
-
+<div id="zona_opcoes_p1">
+<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="p1" id="p1op1" value="cc">Bacalhau assado</input></p>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="p1" id="p1op2" value="dc">Bacalhau cozido</input></p>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="p1" id="p1op3" value="dc">Polvo assado</input></p>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="p1" id="p1op4" value="dc">Polvo cozido</input></p>    
+</div><br>
+<div id="zona_resp_p1"style="height:50px;">&nbsp;</div>
 <div style="margin-top:30px;"></div>
 <p style="margin-top:0px;margin-bottom:0px;">2. Como é atazanado o joão cebola à baiúca do moinho da fonte que</p>
 <p style="margin-top:0px;margin-bottom:0px;">soletraste?</p>
-
-<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="comer" value="com couves e ervilhas">com couves e ervilhas</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="comer" value="com grelos e cenoura">com grelos e cenoura</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="comer" value="com arroz e grelos">com arroz e grelos</p>
-<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="comer" value="com arroz e cenoura">com arroz e cenoura</p>
-
+<div id="zona_opcoes_p2">
+<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="p2" id="p2op1" value="cc">com couves e ervilhas</input></p>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="p2" id="p2op2" value="dc">com grelos e cenoura</input></p>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="p2" id="p2op3" value="dc">com arroz e grelos</input></p>
+<p style="margin-top:0px;margin-bottom:0px;margin-left:70px;"><input type="radio" name="p2" id="p2op4" value="dc">com arroz e cenoura</input></p>    
+</div><br>
+<div id="zona_resp_p2"style="height:50px;">&nbsp;</div>
 <div style="margin-top:30px;"></div>
 <p>3. Como foram jordoados estes da trilha?</p>
 
 <p style="margin-top:30px;margin-bottom:0px;margin-left:70px;"><img src="../images/cheese.png" width="150px">
-<span style="padding-right:30px;"></span> <img src="../images/egg.png" width="150px"> <span style="padding-right:30px;"></span> <img src="../images/fruit.png" width="150px"> </p>
+<span style="padding-right:35px;"></span> <img src="../images/egg.png" width="150px"> <span style="padding-right:30px;"></span> <img src="../images/fruit.png" width="150px"> </p>
 
-<p style="margin-left:70px;"> <textarea rows="1" cols="15"></textarea> <span style="padding-right:50px;"></span>
-<textarea rows="1" cols="15"></textarea> <span style="padding-right:50px;"></span> <textarea rows="1" cols="15"></textarea> </p>   
+<p style="margin-left:30px;">1-<input id="p3" type="text" />2-<input id="p4" type="text"/>
+3-<input id="p5" type="text"/> <span style="padding-right:50px;"></span></p>   
 
 <p style="margin-top:0px;margin-bottom:0px;margin-left:100px;">(queijo) <span style="padding-right:130px;"></span>(ovo)<span style="padding-right:130px;">
-</span>(fruta)</p> 
-
-<div style="margin-top:30px;"></div>
-<font size="2">
-<p><b>Piações cópias do moinho da fonte de engenho nº6 (Soluções do exercício nº6)</b></p>
-<div style="margin-top:20px;"></div>
-<p style="margin-top:0px;margin-bottom:0px;">1.1 chavequeiro <span style="padding-right:150px;"></span> 2.4 cardosas</p>   
-<p style="margin-top:0px;margin-bottom:0px;">1.2 berlícua <span style="padding-right:178px;"></span> 2.5 camochos</p>    
-<p style="margin-top:0px;margin-bottom:0px;">1.3 mestre-régio <span style="padding-right:148px;"></span> 2.6 bailadeiras</p>      
-<p style="margin-top:0px;margin-bottom:0px;">1.4 cardosas <span style="padding-right:173px;"></span> 2.7 cardosas didis</p>  
-<p style="margin-top:0px;margin-bottom:0px;">2.1 das do mestre-grosso <span style="padding-right:90px;"></span> 2.8 chavequeiros/jones/são joão da</p>      
-<p style="margin-top:0px;margin-bottom:0px;">2.2 mestre-régio/o do frageleiro <span style="padding-right:47px;"></span> madeira</p>  
-<p style="margin-top:0px;margin-bottom:0px;">2.3 perneiras <span style="padding-right:167px;"></span> 3.façula</p>  
-</font>
-
-<div style="margin-top:20px;"></div>
+</span>(fruta)</p>
+<br><p></p>
+<p id="mess3"style="height:50px;"/>&nbsp;
+<p id="mess4"style="height:50px;"/>&nbsp;
+<p id="mess5"style="height:50px;"/>&nbsp;
+<p></p>
+<p><a href="cakes_foodwords.html" target="_blank"><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:135px"><input type="button" onclick="validar_respostas()" value="Validar"><span style="padding-left:135px"><a href="../exercise8/drinks.html" target="_blank"><img src="../images/play.png" border="0" align="center"></a></p>
 <p><hr align="left" color="#FF4500" width="60%" height="1px" /></p> 
 <p>Separata do Jornal de Minde</p>     
 

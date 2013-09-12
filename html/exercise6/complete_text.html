@@ -1,10 +1,138 @@
 <html>
 
 <head>
+<script>
+function myFunction()
+{
+try
+{ 
+var x=document.getElementById("P1").value;
+if(x=="as do mestre-grosso")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: as do mestre-grosso</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: as do mestre-grosso</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: as do mestre-grosso</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess1");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("P2").value;
+if(x=="mestre-régio")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="o do frageleiro")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mestre-régio</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mestre-régio</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mestre-régio</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess2");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("P3").value;
+if(x=="cardosas")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="perneiras")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: perneiras</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: perneiras</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: perneiras</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess3");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("P4").value;
+if(x=="perneiras")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="cardosas")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess4");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("P5").value;
+if(x=="camochos")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: camochos</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: camochos</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: camochos</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess5");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("P6").value;
+if(x=="bailadeiras")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: bailadeiras</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: bailadeiras</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: bailadeiras</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess6");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("P7").value;
+if(x=="cardosas didis")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas didis</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas didis</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas didis</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess7");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("P8").value;
+if(x=="chavequeiros")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="jones")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="são joão da madeira")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: chavequeiros ou jones e são joão da madeira</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: chavequeiros ou jones e são joão da madeira</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: chavequeiros ou jones e são joão da madeira</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess8");
+y.innerHTML="" + err + "";
+}
+try
+{ 
+var x=document.getElementById("P9").value;
+if(x=="façula")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: façula</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: façula</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: façula</b>";
+}
+catch(err)
+{
+var y=document.getElementById("mess9");
+y.innerHTML="" + err + "";
+}
+}
+</script>
         <title>O Touquim Xaral</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" type="text/css" href="../main.css"></link>
-        <link rel="stylesheet" type="text/css" href="../main-left.css"></link>
+          <link rel="stylesheet" type="text/css" href="../main-right.css"></link>
+		<link rel="stylesheet" type="text/css" href="../main-left.css"></link>
      
 </head>
 
@@ -15,39 +143,35 @@
 <p><hr width=70% align=center color=#FF4500></p> 
 
 <div style="margin-top:40px;"></div>
-<p>1. Embute o moinho da fonte.</p>    
+<p>2. Embute o moinho da fonte.</p>    
 
 <div style="margin-top:20px;"></div>
-<p style="margin-top:0px;margin-bottom:0px;">Nos passos do arrepia pantamos um podê d</p>
-<p style="margin-top:0px;margin-bottom:0px;"><textarea rows="1" cols="20"></textarea> (1) e nunca colamos do parreiral sem o</p>
-<p style="margin-top:0px;margin-bottom:0px;"><textarea rows="1" cols="20"></textarea> (2). Os covanos e as covanas acachem as do</p> 
-<p style="margin-top:0px;margin-bottom:0px;">joão das penhas com as <textarea rows="1" cols="20"></textarea> (3) e as</p> 
-<p style="margin-top:0px;margin-bottom:0px;"><textarea rows="1" cols="20"></textarea> (4).</p>
-<p style="margin-top:0px;margin-bottom:0px;">Nos passos do crestador botinamos <textarea rows="1" cols="20"></textarea> (5)</p>
-<p style="margin-top:0px;margin-bottom:0px;">porque os catronhos têm ardença de invisível. Nesses passos as</p>
-<p style="margin-top:0px;margin-bottom:0px;">covanas jordem as do mestre-grosso as <textarea rows="1" cols="20"></textarea> (6)</p>
-<p style="margin-top:0px;margin-bottom:0px;">teodorinhas e os covanos as <textarea rows="1" cols="20"></textarea> (7), para</p>
-<p style="margin-top:0px;margin-bottom:0px;">jordarem com as santamaras ao cresta. Nas chavecas jordem</p>
-<p style="margin-top:0px;margin-bottom:0px;"><textarea rows="1" cols="20"></textarea> (8) porque o cresta é um podê de ferrudo nesses</p>
-<p style="margin-top:0px;margin-bottom:0px;">passos.</p>
-
+Nos passos do arrepia pantamos um podê d` ______________(1) e nunca colamos do parreiral sem o _____________ (2). Os covanos e as covanas acachem as do joão das penhas com as ____________
+ (3) e as _____________ (4).</p>
+ Nos passos do crestador botinamos _____________(5) porque os catronhos têm ardença de invisível.</p>
+ Nesses passos as covanas jordem as do mestre-grosso as _____________(6) teodorinhas e os covanos as _____________(7), para jordarem com as santamaras ao cresta.</p>
+ Nas chavecas jordem ____________(8) porque o cresta é um podê de ferrudo nesses passos.<p></p>
+1-<input id="P1" type="text"style="width:280px;"><p></p>
+<p id="mess1"style="height:50px;">&nbsp;</p>
+2-<input id="P2" type="text"style="width:280px;" ><p></p>
+<p id="mess2"style="height:50px;">&nbsp;</p>
+3-<input id="P3" type="text"style="width:280px;"><p></p>
+<p id="mess3"style="height:50px;">&nbsp;</p>
+4-<input id="P4" type="text"style="width:280px;"><p></p>
+<p id="mess4"style="height:50px;">&nbsp;</p>
+5-<input id="P5" type="text"style="width:280px;"><p></p>
+<p id="mess5"style="height:50px;">&nbsp;</p>
+6-<input id="P6" type="text"style="width:280px;"><p></p>
+<p id="mess6"style="height:50px;">&nbsp;</p>
+7-<input id="P7" type="text"style="width:280px;"><p></p>
+<p id="mess7"style="height:50px;">&nbsp;</p>
+8-<input id="P8" type="text"style="width:280px;"><p></p>
+<p id="mess8"style="height:50px;">&nbsp;</p>
 <div style="margin-top:40px;"></div>
-<p style="margin-top:0px;margin-bottom:0px;">2. O que jorda o aguenta-chaveca mais crestador: uma façula ou</p>
+<p style="margin-top:0px;margin-bottom:0px;">3. O que jorda o aguenta-chaveca mais crestador: uma façula ou</p>
 <p style="margin-top:0px;margin-bottom:0px;">um vista-alegre?</p>
-
-<p><textarea rows="1" cols="75"></textarea></p>  
-
-<div style="margin-top:80px;"></div>
-<p style="margin-top:0px;margin-bottom:0px;"><font size="2"><b>Piações cópias do moinho da fonte de engenho nº5 (Soluções do exercício nº5)</b></p>
-<p style="margin-top:0px;margin-bottom:0px;">1.covano ancho e folacho</p>
-<p style="margin-top:0px;margin-bottom:0px;">2.covano caga-tacos, covano teodorinho</p>
-<p style="margin-top:0px;margin-bottom:0px;">3.covana jaquininha e com um talha-mar ancho pra diante</p>
-<p style="margin-top:0px;margin-bottom:0px;">4.covana com rodapé, covana com zé-pedro</p>
-<p style="margin-top:0px;margin-bottom:0px;">5.terraizinha a regatinhar dos mirantes</p>
-<p style="margin-top:0px;margin-bottom:0px;">6.gâmbia com as arranhadoras da gâmbia anchas</p>
-</font>
-
-<div style="margin-top:80px;"></div>
+<input id="P9" type="text"><p></p><p id="mess9"style="height:50px;">&nbsp;</p>
+<p><span style="padding-left:0px"><a href="../exercise6/man_wear.html" target="_blank"><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:130px"><input type="button" onclick="myFunction()" value="Validar"><span style="padding-left:140px"><a href="../exercise7/food.html" target="_blank"><img src="../images/play.png" border="0" align="center"></a></p>
 <p><hr align="left" color="#FF4500" width="60%" height="1px" /></p> 
 <p>Separata do Jornal de Minde</p>
 
