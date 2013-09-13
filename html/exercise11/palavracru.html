@@ -530,11 +530,11 @@ function CheckClick()
 	
 	// If errors were found, just exit now.
 	if (ErrorsFound > 0 && EmptyFound > 0)
-		document.getElementById("welcomemessage").innerHTML = ErrorsFound + (ErrorsFound > 1 ? " errors" : " error") + " and " + EmptyFound + (EmptyFound > 1 ? " incomplete words were" : " incomplete word was") + " found.";
+		document.getElementById("welcomemessage").innerHTML = ErrorsFound + (ErrorsFound > 1 ? " erros" : " erro") + " e " + EmptyFound + (EmptyFound > 1 ? " palavras incompletas foram encontradas" : " palavra incompleta foi encontrada") + ".";
 	else if (ErrorsFound > 0)
-		document.getElementById("welcomemessage").innerHTML = ErrorsFound + (ErrorsFound > 1 ? " errors were" : " error was") + " found.";
+		document.getElementById("welcomemessage").innerHTML = ErrorsFound + (ErrorsFound > 1 ? " erros foram encontrados" : " erro foi encontrado") + ".";
 	else if (EmptyFound > 0)
-		document.getElementById("welcomemessage").innerHTML = "No errors were found, but " + EmptyFound + (EmptyFound > 1 ? " incomplete words were" : " incomplete word was") + " found.";
+		document.getElementById("welcomemessage").innerHTML = "Não foram encontrados erros, mas " + EmptyFound + (EmptyFound > 1 ? " palavras incompletas foram encontradas" : " palavra incompleta foi encontrada") + ".";
 	
 	if (ErrorsFound + EmptyFound > 0)
 	{
@@ -579,7 +579,7 @@ function HashWord(Word)
 
 <div id="welcomemessage" class="ecw-answerbox" style="display:none;">
 <h3>Bem vindo!</h3>
-<p>Click para comecar as palavras cruzadas.</p>
+<p>Clique para começar as palavras cruzadas.</p>
 </div>
 
 <div id="answerbox" class="ecw-answerbox" style="display:none;">
@@ -604,7 +604,7 @@ function HashWord(Word)
 
 <div style="margin-top: 1em;">
 	<button id="checkbutton" type="button" onclick="CheckClick();" style="display: none;">Validar</button>
-<a href="jobs_exercises.html" target="_blank">Voltar a pagina anterior</a>
+<a href="jobs_exercises.html"> Voltar a pagina anterior</a>
 	</div>
 
 <script type="text/javascript"><!--
