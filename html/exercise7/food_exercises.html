@@ -38,12 +38,12 @@
         }
 		try
 { 
-var x=document.getElementById("p3").value;
-if(x=="marco da portela")    throw "1-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "1-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: marco da portela</b>";
-if(isNaN(x)) throw "1-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: marco da portela</b>";
-if(x>10)     throw "1-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: marco da portela</b>";
-if(x<5)      throw "1-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: marco da portela</b>";
+var x=document.getElementById("p3").value.toLowerCase();
+if(x=="marco da portela".toLowerCase())    throw "1.<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "1.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: marco da portela</b>";
+if(isNaN(x)) throw "1.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: marco da portela</b>";
+if(x>10)     throw "1.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: marco da portela</b>";
+if(x<5)      throw "1.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: marco da portela</b>";
 }
 catch(err)
 {
@@ -52,11 +52,11 @@ y.innerHTML=" " + err + "";
 }
 		try
 { 
-var x=document.getElementById("p4").value;
-if(x=="galízio")    throw "2-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "2-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: galízio </b>";
-if(x>10)     throw "2-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: galízio</b>";
-if(x<5)      throw "2-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: galízio</b>";
+var x=document.getElementById("p4").value.toLowerCase();
+if(x=="galízio".toLowerCase())    throw "2.<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "2.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: galízio </b>";
+if(x>10)     throw "2.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: galízio</b>";
+if(x<5)      throw "2.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: galízio</b>";
 }
 catch(err)
 {
@@ -65,11 +65,11 @@ y.innerHTML=" " + err + "";
 }
 		try
 { 
-var x=document.getElementById("p5").value;
-if(x=="mimosas")    throw "<3-img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "3-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mimosas </b>";
-if(x>10)     throw "3-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mimosas</b>";
-if(x<5)      throw "3-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mimosas</b>";
+var x=document.getElementById("p5").value.toLowerCase();
+if(x=="mimosas".toLowerCase())    throw "<3.img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "3.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mimosas</b>";
+if(x>10)     throw "3.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mimosas</b>";
+if(x<5)      throw "3.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mimosas</b>";
 }
 catch(err)
 {
@@ -94,9 +94,10 @@ y.innerHTML=" " + err + "";
 <p><hr width=70% align=center color=#FF4500></p> 
 
 <div style="margin-top:30px;">
-<p><b>Moinho da fonte de engenho (Ficha de exercício)</b></p>
+    <div style="text-align:center;">
+<b>Moinho da fonte de engenho (Ficha de exercício)</b>
 </div>
-
+<br>
 <div style="margin-top:30px;">
 <p style="margin-top:0px;margin-bottom:0px;">1. O que vai trilhar a covana do moinho da fonte que soletraste?</p>
 </div>
@@ -124,8 +125,8 @@ y.innerHTML=" " + err + "";
 <p style="margin-top:30px;margin-bottom:0px;margin-left:70px;"><img src="../images/cheese.png" width="150px">
 <span style="padding-right:35px;"></span> <img src="../images/egg.png" width="150px"> <span style="padding-right:30px;"></span> <img src="../images/fruit.png" width="150px"> </p>
 
-<p style="margin-left:30px;">1-<input id="p3" type="text" />2-<input id="p4" type="text"/>
-3-<input id="p5" type="text"/> <span style="padding-right:50px;"></span></p>   
+<p style="margin-left:30px;">1.<input id="p3" type="text" />2.<input id="p4" type="text"/>
+3.<input id="p5" type="text"/> <span style="padding-right:50px;"></span></p>   
 
 <p style="margin-top:0px;margin-bottom:0px;margin-left:100px;">(queijo) <span style="padding-right:130px;"></span>(ovo)<span style="padding-right:130px;">
 </span>(fruta)</p>
@@ -134,14 +135,11 @@ y.innerHTML=" " + err + "";
 <p id="mess4"style="height:50px;"/>&nbsp;
 <p id="mess5"style="height:50px;"/>&nbsp;
 <p></p>
-<p><a href="cakes_foodwords.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:135px"><input type="button" onclick="validar_respostas()" value="Validar"><span style="padding-left:135px"><a href="../exercise8/drinks.html" ><img src="../images/play.png" border="0" align="center"></a></p>
-<p><hr align="left" color="#FF4500" width="60%" height="1px" /></p> 
-<p>Separata do Jornal de Minde</p>     
-
-
-
+<span style="padding-left:20%"><input type="button" onclick="validar_respostas()" value="Validar"align="center">
+<br>
+<p><span style="padding-left:51%"><a href="cakes_foodwords.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise1/indice.html" ><img src="../images/indice.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise8/drinks.html" ><img src="../images/play.png" border="0" align="center"></a></p>
+<p><hr align="right" color="#FF4500" width="50%" height="1px" /></p> 
 </body>
-
 </html>    
 
 

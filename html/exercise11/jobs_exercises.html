@@ -6,11 +6,9 @@
     {
 	try
 	{ 
-	var x=document.getElementById("p2").value;
-	if(x=="A zegraga jordou do dragão")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: A zegraga jordou do dragão</b>";
-	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: A zegraga jordou do dragão</b>";
-	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: A zegraga jordou do dragão</b>";
+	var x=document.getElementById("p2").value.toLowerCase();
+	if(x=="a zegraga jordou do dragão")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	else    throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: A zegraga jordou do dragão</b>";
 	}
 	catch(err)
 	{
@@ -77,14 +75,11 @@
 <p style="margin-top:0px;margin-bottom:0px;">6.o seu andarilho é classe de dom carlos da das corridas</p>
 <p style="margin-top:0px;margin-bottom:0px;">7.frederica jordar uma zegrega para outro pregal</p>
 <p style="margin-top:0px;margin-bottom:0px;">8.frederica soletrar alfarrábios sem os trocar a neto</p>
-
+<br>
+<span style="padding-left:20%"><input type="button" onclick="validar_respostas()" value="Validar"align="center">
 <div style="margin-top:20px;"></div>
 <div style="margin-top:20px;"></div>
-<p><a href="text_jobs.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:90px"><input type="button" onclick="validar_respostas()" value="Validar"><span style="padding-left:120px"><a href="../exercise12/animals.html" ><img src="../images/play.png" border="0" align="center"></a></p>
-<p><hr align="left" color="#FF4500" width="50%" height="1px" /></p> 
-<p>Separata do Jornal de Minde</p>     
-
-
+<p><span style="padding-left:50%"><a href="text_jobs.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise1/indice.html" ><img src="../images/indice.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise12/animals.html" ><img src="../images/play.png" border="0" align="center"></a></p>
+<p><hr align="right" color="#FF4500" width="50%" height="1px" /></p> 
 </body>
-
 </html>                 

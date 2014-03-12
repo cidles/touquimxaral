@@ -6,8 +6,8 @@
 {
 	try
 	{ 
-	var x=document.getElementById("p1").value;
-	if(x=="chavequeiro")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	var x=document.getElementById("p1").value.toLowerCase();
+	if(x=="chavequeiro".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: chavequeiro</b>";
 	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: chavequeiro</b>";
 	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: chavequeiro</b>";
@@ -19,8 +19,8 @@
 	}
 	try
 	{ 
-	var x=document.getElementById("p2").value;
-	if(x=="berlícua")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	var x=document.getElementById("p2").value.toLowerCase();
+	if(x=="berlícua".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: berlícua</b>";
 	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: berlícua</b>";
 	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: berlícua</b>";
@@ -32,8 +32,8 @@
 	}
 	try
 	{ 
-	var x=document.getElementById("p3").value;
-	if(x=="mestre-régio")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	var x=document.getElementById("p3").value.toLowerCase();
+	if(x=="mestre-régio".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mestre-régio</b>";
 	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mestre-régio</b>";
 	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mestre-régio</b>";
@@ -45,8 +45,8 @@
 	}	
 	try
 	{	 
-	var x=document.getElementById("p4").value;
-	if(x=="cardosas")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	var x=document.getElementById("p4").value.toLowerCase();
+	if(x=="cardosas".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas</b>";
 	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas</b>";
 	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas</b>";
@@ -82,21 +82,14 @@
 1.<input id="p1" type="text"><p></p><p id="mess1"style="height:50px;">&nbsp;</p>
 2.<input id="p2" type="text" align="right"><p></p><p id="mess2"style="height:50px;">&nbsp;</p>
 3.<input id="p3" type="text"><p></p><p id="mess3"style="height:50px;">&nbsp;</p>
-4.<input id="p4" type="text"><p></p><p id="mess4"style="height:50px;">&nbsp;</p>              
-<input type="button" onclick="validar_respostas()" value="Validar">
+4.<input id="p4" type="text"><p></p><p id="mess4"style="height:50px;">&nbsp;</p>     
+<br><span style="padding-left:1%"><input type="button" onclick="validar_respostas()" value="Validar"align="center">
+<br>         
 <p style="margin-top:50px;"><img src="../images/professor.png" align="left">
-<p><span style="padding-left:120px"><a href="../exercise6/clothes_text.html"> <img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:55px"><a href="http://www.cidles.eu/ltll/labs-wordbyword">http://www.cidles.eu/ltll/labs-wordbyword</a><span style="padding-left:30px"><a href="../exercise6/complete_text.html" ><img src="../images/play.png" border="0" align="center"></a></p>
-<p><hr align="right" color="FF4500" width="65%" height="1px" /></p>
-
-<p style="text-align:right;margin-top:0px;margin-bottom:0px;">A da classe do touquim nº6 de 12</p>
-<p style="text-align:right;margin-top:0px;margin-bottom:0px;">Colecção "As da classe do touquim da Piação d'O Touquim Xaral"</p>    
-
-   </div>
-
-       
-           
-
+<p><span style="padding-left:33%"><a href="../exercise6/clothes_text.html"> <img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise1/indice.html" ><img src="../images/indice.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise6/complete_text.html" ><img src="../images/play.png" border="0" align="center"></a></p>
+<p><hr align="right" color="FF4500" width="50%" height="1px" /></p>
+<span style="padding-left:32%"><a href="http://media.cidles.eu/labs/wordbyword/">http://media.cidles.eu/labs/wordbyword/</a>
+</div>
 </body>
-
 </html>
 

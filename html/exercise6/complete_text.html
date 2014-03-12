@@ -6,11 +6,11 @@ function myFunction()
 {
 try
 { 
-var x=document.getElementById("P1").value;
-if(x=="as do mestre-grosso")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: as do mestre-grosso</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: as do mestre-grosso</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: as do mestre-grosso</b>";
+var x=document.getElementById("P1").value.toLowerCase();
+if(x=="as do mestre-grosso".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>1- Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>(1) Didi, resposta certa: as do mestre-grosso</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>(1) Didi, resposta certa: as do mestre-grosso</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>(1) Didi, resposta certa: as do mestre-grosso</b>";
 }
 catch(err)
 {
@@ -19,12 +19,12 @@ y.innerHTML="" + err + "";
 }
 try
 { 
-var x=document.getElementById("P2").value;
-if(x=="mestre-régio")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="o do frageleiro")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mestre-régio</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mestre-régio</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: mestre-régio</b>";
+var x=document.getElementById("P2").value.toLowerCase();
+if(x=="mestre-régio".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>2-Cópio!<b>";
+if(x=="o do frageleiro".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>2- Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>(2) Didi, resposta certa: mestre-régio</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>(2) Didi, resposta certa: mestre-régio</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>(2) Didi, resposta certa: mestre-régio</b>";
 }
 catch(err)
 {
@@ -33,12 +33,12 @@ y.innerHTML="" + err + "";
 }
 try
 { 
-var x=document.getElementById("P3").value;
-if(x=="cardosas")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="perneiras")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: perneiras</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: perneiras</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: perneiras</b>";
+var x=document.getElementById("P3").value.toLowerCase();
+if(x=="cardosas".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>3- Cópio!<b>";
+if(x=="perneiras".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>3- Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>(3) Didi, resposta certa: perneiras</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>(3) Didi, resposta certa: perneiras</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>(3) Didi, resposta certa: perneiras</b>";
 }
 catch(err)
 {
@@ -47,12 +47,12 @@ y.innerHTML="" + err + "";
 }
 try
 { 
-var x=document.getElementById("P4").value;
-if(x=="perneiras")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="cardosas")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas</b>";
+var x=document.getElementById("P4").value.toLowerCase();
+if(x=="perneiras".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>4- Cópio!<b>";
+if(x=="cardosas".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>4- Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>(4) Didi, resposta certa: cardosas</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>(4) Didi, resposta certa: cardosas</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>(4) Didi, resposta certa: cardosas</b>";
 }
 catch(err)
 {
@@ -61,11 +61,11 @@ y.innerHTML="" + err + "";
 }
 try
 { 
-var x=document.getElementById("P5").value;
-if(x=="camochos")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: camochos</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: camochos</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: camochos</b>";
+var x=document.getElementById("P5").value.toLowerCase();
+if(x=="camochos".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>5- Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>(5) Didi, resposta certa: camochos</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>(5) Didi, resposta certa: camochos</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>(5) Didi, resposta certa: camochos</b>";
 }
 catch(err)
 {
@@ -74,11 +74,11 @@ y.innerHTML="" + err + "";
 }
 try
 { 
-var x=document.getElementById("P6").value;
-if(x=="bailadeiras")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: bailadeiras</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: bailadeiras</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: bailadeiras</b>";
+var x=document.getElementById("P6").value.toLowerCase();
+if(x=="bailadeiras".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>6- Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>(6) Didi, resposta certa: bailadeiras</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>(6) Didi, resposta certa: bailadeiras</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>(6) Didi, resposta certa: bailadeiras</b>";
 }
 catch(err)
 {
@@ -87,11 +87,11 @@ y.innerHTML="" + err + "";
 }
 try
 { 
-var x=document.getElementById("P7").value;
-if(x=="cardosas didis")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas didis</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas didis</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cardosas didis</b>";
+var x=document.getElementById("P7").value.toLowerCase();
+if(x=="cardosas didis".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>7- Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>(7) Didi, resposta certa: cardosas didis</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>(7) Didi, resposta certa: cardosas didis</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>(7) Didi, resposta certa: cardosas didis</b>";
 }
 catch(err)
 {
@@ -100,13 +100,13 @@ y.innerHTML="" + err + "";
 }
 try
 { 
-var x=document.getElementById("P8").value;
-if(x=="chavequeiros")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="jones")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="são joão da madeira")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: chavequeiros ou jones e são joão da madeira</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: chavequeiros ou jones e são joão da madeira</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: chavequeiros ou jones e são joão da madeira</b>";
+var x=document.getElementById("P8").value.toLowerCase();
+if(x=="chavequeiros".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>8- Cópio!<b>";
+if(x=="jones".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>8- Cópio!<b>";
+if(x=="são joão da madeira".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>8- Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>(8) Didi, resposta certa: chavequeiros</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>(8) Didi, resposta certa: chavequeiros</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>(8) Didi, resposta certa: chavequeiros</b>";
 }
 catch(err)
 {
@@ -115,8 +115,8 @@ y.innerHTML="" + err + "";
 }
 try
 { 
-var x=document.getElementById("P9").value;
-if(x=="façula")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+var x=document.getElementById("P9").value.toLowerCase();
+if(x=="façula".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: façula</b>";
 if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: façula</b>";
 if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: façula</b>";
@@ -144,37 +144,29 @@ y.innerHTML="" + err + "";
 
 <div style="margin-top:40px;"></div>
 <p>2. Embute o moinho da fonte.</p>    
-
-<div style="margin-top:20px;"></div>
-Nos passos do arrepia pantamos um podê d` ______________(1) e nunca colamos do parreiral sem o _____________ (2). Os covanos e as covanas acachem as do joão das penhas com as ____________
- (3) e as _____________ (4).</p>
- Nos passos do crestador botinamos _____________(5) porque os catronhos têm ardença de invisível.</p>
- Nesses passos as covanas jordem as do mestre-grosso as _____________(6) teodorinhas e os covanos as _____________(7), para jordarem com as santamaras ao cresta.</p>
- Nas chavecas jordem ____________(8) porque o cresta é um podê de ferrudo nesses passos.<p></p>
-1-<input id="P1" type="text"style="width:280px;"><p></p>
+<div style="margin-left: 4%; margin-right: 4%">
+    <p align="justify">
+Nos passos do arrepia pantamos um podê d`<input id="P1" type="text"style="width:150px;">(1) e nunca colamos do parreiral sem o <input id="P2" type="text"style="width:150px;" >(2). Os covanos e as covanas acachem as do joão das penhas com as <input id="P3" type="text"style="width:150px;"> (3) e as <input id="P4" type="text"style="width:150px;"> (4).</p> Nos passos do crestador botinamos <input id="P5" type="text"style="width:150px;">(5) porque os catronhos têm ardença de invisível.</p>
+ Nesses passos as covanas jordem as do mestre-grosso as <input id="P6" type="text"style="width:150px;">(6) teodorinhas e os covanos as <input id="P7" type="text"style="width:150px;">(7), para jordarem com as santamaras ao cresta.</p>
+ Nas chavecas jordem <input id="P8" type="text"style="width:150px;">(8) porque o cresta é um podê de ferrudo nesses passos.<p></p>
+</div>
 <p id="mess1"style="height:50px;">&nbsp;</p>
-2-<input id="P2" type="text"style="width:280px;" ><p></p>
 <p id="mess2"style="height:50px;">&nbsp;</p>
-3-<input id="P3" type="text"style="width:280px;"><p></p>
 <p id="mess3"style="height:50px;">&nbsp;</p>
-4-<input id="P4" type="text"style="width:280px;"><p></p>
 <p id="mess4"style="height:50px;">&nbsp;</p>
-5-<input id="P5" type="text"style="width:280px;"><p></p>
 <p id="mess5"style="height:50px;">&nbsp;</p>
-6-<input id="P6" type="text"style="width:280px;"><p></p>
 <p id="mess6"style="height:50px;">&nbsp;</p>
-7-<input id="P7" type="text"style="width:280px;"><p></p>
 <p id="mess7"style="height:50px;">&nbsp;</p>
-8-<input id="P8" type="text"style="width:280px;"><p></p>
 <p id="mess8"style="height:50px;">&nbsp;</p>
-<div style="margin-top:40px;"></div>
+<div style="margin-top:20px;"></div>
 <p style="margin-top:0px;margin-bottom:0px;">3. O que jorda o aguenta-chaveca mais crestador: uma façula ou</p>
 <p style="margin-top:0px;margin-bottom:0px;">um vista-alegre?</p>
+<br>
 <input id="P9" type="text"><p></p><p id="mess9"style="height:50px;">&nbsp;</p>
-<p><span style="padding-left:0px"><a href="../exercise6/man_wear.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:130px"><input type="button" onclick="myFunction()" value="Validar"><span style="padding-left:140px"><a href="../exercise7/food.html" ><img src="../images/play.png" border="0" align="center"></a></p>
-<p><hr align="left" color="#FF4500" width="60%" height="1px" /></p> 
-<p>Separata do Jornal de Minde</p>
+<span style="padding-left:20%"><input type="button" onclick="myFunction()" value="Validar"align="center">
 
+<p><span style="padding-left:51%"><a href="../exercise6/man_wear.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise1/indice.html" ><img src="../images/indice.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise7/food.html" ><img src="../images/play.png" border="0" align="center"></a></p>
+<p><hr align="right" color="#FF4500" width="50%" height="1px" /></p> 
 </body>
 
 </html>

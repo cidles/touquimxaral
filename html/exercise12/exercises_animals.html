@@ -29,11 +29,9 @@
         }
 try
 { 
-var x=document.getElementById("p1").value;
+var x=document.getElementById("p1").value.toLowerCase();
  if(x=="agoirento")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: agoirento</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: agoirento</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: agoirento</b>";
+else throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: agoirento</b>";
 }
 catch(err)
 {
@@ -42,11 +40,9 @@ y.innerHTML="" + err + "";
 }
 try
 { 
-var x=document.getElementById("p2").value;
+var x=document.getElementById("p2").value.toLowerCase();
 if(x=="cabaneira")throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cabaneira</b>" ;
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cabaneira</b>" ;
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cabaneira</b>" ;
+else throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cabaneira</b>" ;
 }
 catch(err)
 {
@@ -55,11 +51,9 @@ y.innerHTML=" " + err + "";
 }
 try
 { 
-var x=document.getElementById("p3").value;
+var x=document.getElementById("p3").value.toLowerCase();
 if(x=="sequeiro")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: sequeiro</b>" ;
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: sequeiro</b>" ;
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: sequeiro</b>" ;
+else throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: sequeiro</b>" ;
 }
 catch(err)
 {
@@ -68,11 +62,9 @@ y.innerHTML=" " + err + "";
 }
 try
 { 
-var x=document.getElementById("p4").value;
+var x=document.getElementById("p4").value.toLowerCase();
 if(x=="salteador")throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa:salteador</b> " ;
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: salteador</b>" ;
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: salteador</b>" ;
+else throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: salteador</b>" ;
 }
 catch(err)
 {
@@ -119,13 +111,11 @@ y.innerHTML=" " + err + "";
 <p>3.Qual a do noé de que és antónio forno ancho?</p>
 <p><textarea rows="1" cols="80"></textarea> </p>
 <div style="margin-top:30px;"></div>
-<p><a href="text_animals.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:90px"><input type="button" onclick="validar_respostas()" value="Validar"><span style="padding-left:120px"><a href="../exercise13/money_numbers.html" ><img src="../images/play.png" border="0" align="center"></a></p>
-<p><hr align="left" color="#FF4500" width="50%" height="1px" /></p> 
-<p>Separata do Jornal de Minde</p>     
 
-
+<span style="padding-left:20%"><input type="button" onclick="validar_respostas()" value="Validar"align="center">
+<p><span style="padding-left:50%"><a href="text_animals.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise1/indice.html" ><img src="../images/indice.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise13/money_numbers.html" ><img src="../images/play.png" border="0" align="center"></a></p>
+<p><hr align="right" color="#FF4500" width="50%" height="1px" /></p> 
 </body>
-
 </html>   
    
         

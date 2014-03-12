@@ -6,13 +6,10 @@
     {
 	try
 	{ 
-	var x=document.getElementById("p1").value;
-	if(x=="2 de baiucas do invisível")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	if(x=="escama de baiucas do invisível")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	if(x=="2 (escama) de baiucas do invisível")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: 2 (escama) de baiucas do invisível</b>";
-	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: 2 (escama) de baiucas do invisível</b>";
-	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: 2 (escama) de baiucas do invisível</b>";
+	var x=document.getElementById("p1").value.toLowerCase();
+	if(x=="2 de baiucas do invisível" || x =="escama de baiucas do invisível")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+
+	else throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: escama de baiucas do invisível</b>";
 	}
 	catch(err)
 	{
@@ -22,8 +19,8 @@
 	{
 	try
 	{ 
-	var x=document.getElementById("p3").value;
-	if(x=="caruta do parreiral")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	var x=document.getElementById("p3").value.toLowerCase();
+	if(x=="caruta do parreiral".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: caruta do parreiral</b>";
 	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: caruta do parreiral</b>";
 	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: caruta do parreiral</b>";
@@ -36,8 +33,8 @@
 	}
 		try
 	{ 
-	var x=document.getElementById("p4").value;
-	if(x=="a da cal")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	var x=document.getElementById("p4").value.toLowerCase();
+	if(x=="a da cal".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: a da cal</b>";
 	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: a da cal</b>";
 	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: a da cal</b>";
@@ -49,12 +46,9 @@
 	}
 		try
 	{ 
-	var x=document.getElementById("p5").value;
-	if(x=="couceira")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	if(x=="a do lérias")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: couceira / a do lérias</b> ";
-	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: couceira / a do lérias</b>";
-	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: couceira / a do lérias</b>";
+	var x=document.getElementById("p5").value.toLowerCase();
+	if(x=="couceira" || x=="a do lérias")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	else throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: couceira</b>";
 	}
 	catch(err)
 	{
@@ -63,11 +57,9 @@
 	}
 		try
 	{ 
-	var x=document.getElementById("p6").value;
-	if(x=="a da classse fusca")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: couceira / a do lérias</b> ";
-	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: couceira / a do lérias</b>";
-	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: couceira / a do lérias</b>";
+	var x=document.getElementById("p6").value.toLowerCase();
+	if(x=="a da classse fusca".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	else  throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: a da classse fusca</b>";
 	}
 	catch(err)
 	{
@@ -76,8 +68,8 @@
 	}
 	try
 	{ 
-	var x=document.getElementById("p7").value;
-	if(x=="clareira")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	var x=document.getElementById("p7").value.toLowerCase();
+	if(x=="clareira".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: clareira</b> ";
 	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: clareira</b>";
 	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: clareira</b>";
@@ -140,14 +132,10 @@
 3.<input id="p5" type="text"style="width:180px;"><p></p><p id="mess5"style="height:50px;">&nbsp;</p>
 4.<input id="p6" type="text"style="width:180px;"><p></p><p id="mess6"style="height:50px;">&nbsp;</p>
 5.<input id="p7" type="text"style="width:180px;"><p></p><p id="mess7"style="height:50px;">&nbsp;</p>
-<p><a href="text.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:90px"><input type="button" onclick="validar_respostas()" value="Validar"><span style="padding-left:120px"><a href="../exercise10/transports.html"> <img src="../images/play.png" border="0" align="center"></a></p>
-<p><hr align="left" color="#FF4500" width="50%" height="1px" /></p> 
-<p>Separata do Jornal de Minde</p>      
-
-
-
+<span style="padding-left:20%"><input type="button" onclick="validar_respostas()" value="Validar"align="center">
+<p><span style="padding-left:50%"><a href="text.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise1/indice.html" ><img src="../images/indice.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise10/transports.html"><img src="../images/play.png" border="0" align="center"></a></p>
+<p><hr align="right" color="#FF4500" width="50%" height="1px" /></p> 
 </body>
-
 </html>               
 
 

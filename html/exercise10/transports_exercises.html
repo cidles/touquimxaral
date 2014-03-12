@@ -37,12 +37,10 @@
         }
 		try
 	{ 
-	var x=document.getElementById("p2").value;
-	if(x=="Não os charales jordarem num vaz neto")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	if(x=="Não, os charales jordarem num vaz neto")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Não, os charales jordarem num vaz neto</b>";
-	if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Não, os charales jordarem num vaz neto</b>";
-	if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Não, os charales jordarem num vaz neto</b>";
+	var x=document.getElementById("p2").value.toLowerCase();
+	if(x=="Não os charales jordarem num vaz neto".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(x=="Não, os charales jordarem num vaz neto".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	else throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Não, os charales jordarem num vaz neto</b>";
 	}
 	catch(err)
 	{
@@ -51,12 +49,12 @@
 	}
 		try
 	{ 
-	var x=document.getElementById("p3").value;
-	if(x=="O covano jorda a do aníbal")    throw "3.1-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	if(x=="O covano jorda a do aníbal.")    throw "3.1-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	if(isNaN(x)) throw "3.1-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano jorda a do aníbal.</b>";
-	if(x>10)     throw "3.1-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano jorda a do aníbal.</b>";
-	if(x<5)      throw "3.1-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano jorda a do aníbal.</b>";
+	var x=document.getElementById("p3").value.toLowerCase();
+	if(x=="O covano jorda a do aníbal".toLowerCase())    throw "3.1.<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(x=="O covano jorda a do aníbal.".toLowerCase())    throw "3.1.<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(isNaN(x)) throw "3.1.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano jorda a do aníbal.</b>";
+	if(x>10)     throw "3.1.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano jorda a do aníbal.</b>";
+	if(x<5)      throw "3.1.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano jorda a do aníbal.</b>";
 	}
 	catch(err)
 	{
@@ -65,12 +63,12 @@
 	}
 		try
 	{ 
-	var x=document.getElementById("p6").value;
-	if(x=="A covana jorda os balões com licas")    throw "3.2-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	if(x=="A covana jorda os balões com licas.")    throw "3.2-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	if(isNaN(x)) throw "3.2-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: A covana jorda os balões com licas.</b>";
-	if(x>10)     throw "3.2-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: A covana jorda os balões com licas.</b>";
-	if(x<5)      throw "3.2-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: A covana jorda os balões com licas.</b>";
+	var x=document.getElementById("p6").value.toLowerCase();
+	if(x=="A covana jorda os balões com licas".toLowerCase())    throw "3.2.<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(x=="A covana jorda os balões com licas.".toLowerCase())    throw "3.2.<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(isNaN(x)) throw "3.2.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: A covana jorda os balões com licas.</b>";
+	if(x>10)     throw "3.2.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: A covana jorda os balões com licas.</b>";
+	if(x<5)      throw "3.2.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: A covana jorda os balões com licas.</b>";
 	}
 	catch(err)
 	{
@@ -79,12 +77,12 @@
 	}
 		try
 	{ 
-	var x=document.getElementById("P7").value;
-	if(x=="O covano desliza")    throw "3.3-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	if(x=="O covano desliza.")    throw "3.3-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	if(isNaN(x)) throw "3.3-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano desliza.</b>";
-	if(x>10)     throw "3.3-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano desliza.</b>";
-	if(x<5)      throw "3.3-<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano desliza.</b>";
+	var x=document.getElementById("P7").value.toLowerCase();
+	if(x=="O covano desliza")    throw "3.3.<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(x=="O covano desliza.")    throw "3.3.<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(isNaN(x)) throw "3.3.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano desliza.</b>";
+	if(x>10)     throw "3.3.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano desliza.</b>";
+	if(x<5)      throw "3.3-.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: O covano desliza.</b>";
 	}
 	catch(err)
 	{
@@ -110,6 +108,7 @@
 <div style="margin-top:50px;"></div>
 <p style="margin-top:0px;margin-bottom:0px;"><b>Moinho da fonte de engenho (Ficha de exercício)</b></p>
 <p style="margin-top:0px;margin-bottom:0px;">1.Como é que o Paulo e a Teresa jordarem ao Segundo Casal Grande?</p>
+<br>
 <div id="zona_opcoes_p1">
 <p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="p1" id="p1op1" value="cc">bicicleta</input></br>
 <p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="p1" id="p1op2" value="dc">de comboio</input></br>
@@ -149,11 +148,8 @@
 <div style="margin-top:20px;"></div>
 <div style="margin-top:20px;"></div>
 <div style="margin-top:20px;"></div>
-<p><a href="text_transports.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:90px"><input type="button" onclick="validar_respostas()" value="Validar"><span style="padding-left:120px"><a href="../exercise11/institutions_jobs.html"><img src="../images/play.png" border="0" align="center"></a></p>
-<p><hr align="left" color="#FF4500" width="50%" height="1px" /></p> 
-<p>Separata do Jornal de Minde</p>     
-
-
+<span style="padding-left:20%"><input type="button" onclick="validar_respostas()" value="Validar"align="center">
+	<p><span style="padding-left:50%"><a href="text_transports.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise1/indice.html" ><img src="../images/indice.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise11/institutions_jobs.html"><img src="../images/play.png" border="0" align="center"></a></p>
+<p><hr align="right" color="#FF4500" width="50%" height="1px" /></p>
 </body>
-
 </html> 

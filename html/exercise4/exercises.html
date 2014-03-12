@@ -30,9 +30,13 @@ if(x=="Jardim do Camões e Pregal da Joana")    throw "<img src='../images/certo
 if(x=="Terruja do Camões e Pregal da Joana")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 if(x=="Pregal da Joana e Terruja do Camões")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 if(x=="Pregal da Joana e Jardim do Camões")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões ou Terruja do Camões e Pregal da Joana</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões ou Terruja do Camões e Pregal da Joana</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões ou Terruja do Camões e Pregal da Joana</b>";
+if(x=="Jardim do Camões, Pregal da Joana")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="Terruja do Camões, Pregal da Joana")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="Pregal da Joana, Terruja do Camões")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="Pregal da Joana, Jardim do Camões")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões e Pregal da Joana</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões e Pregal da Joana</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões e Pregal da Joana</b>";
 }
 catch(err)
 {
@@ -57,9 +61,9 @@ try
 var x=document.getElementById("p4").value;
 if(x=="Jardim do Camões, Ninhou")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 if(x=="Terruja do Camões, Ninhou")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões, Ninhou / Terruja do Camões, Ninhou</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões, Ninhou / Terruja do Camões, Ninhou</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões, Ninhou / Terruja do Camões, Ninhou</b>";
+if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões, Ninhou</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões, Ninhou</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões, Ninhou</b>";
 }
 catch(err)
 {
@@ -72,8 +76,8 @@ var x=document.getElementById("p5").value;
 if(x=="Jardim do Camões, Casal Grande")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 if(x=="Terruja do Camões, Casal Grande")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões, Casal Grande / Terruja do Camões, Casal Grande</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões, Casal Grande / Terruja do Camões, Casal Grande</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões, Casal Grande / Terruja do Camões, Casal Grande</b>";
+if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões, Casal Grande</b>";
+if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Jardim do Camões, Casal Grande</b>";
 }
 catch(err)
 {
@@ -100,7 +104,7 @@ y.innerHTML="" + err + "";
 <h3>Moinho da fonte de engenho (Ficha de exercício)</h3> 
 <div style="margin-top:20px;"></div>
 <p style="margin-top:0px;margin-bottom:0px;">1.O que jorda mais légua da póvoa do Ninhou: Santiago dos</p>
-<p style="margin-top:0px;margin-bottom:0px;">Cavaleiros ou a Terruja de Santa Cruz?</p>
+<p style="margin-top:0px;margin-bottom:0px;">Cavaleiros ou a Terruja de Santa Cruz?</p><br>
 <input id="p1" type="text"style="width:380px;"><p></p>
 <p id="mess1"style="height:50px;">&nbsp;</p>
 
@@ -117,11 +121,14 @@ y.innerHTML="" + err + "";
 <input id="p5" type="text"style="width:280px;"><p></p><p id="mess5"style="height:50px;">&nbsp;</p>
 </span> <img src="../images/big_ben.png" width="170px"> <br><br>
 </span><input id="p6" type="text"style="width:280px;"><p></p><p id="mess6"style="height:50px;">&nbsp;</p>
+<br>
+<span style="padding-left:20%"><input type="button" onclick="myFunction()" value="Validar"align="center">
+<br>
 <div style="margin-top:40px;"></div>
-<p><a href="text.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:160px"><input type="button" onclick="myFunction()" value="Validar"><span style="padding-left:180px"><a href="../exercise5/human_body.html" ><img src="../images/play.png" border="0" align="center"></a></p>
-<p><hr width=70% align=left color=#FF4500> 
+<p><span style="padding-left:51%"><a href="text.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise1/indice.html" ><img src="../images/indice.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise5/human_body.html" ><img src="../images/play.png" border="0" align="center"></a></p>
+<p><hr width=50% align=right color=#FF4500> 
 <div align="left"></p>
-<p>Separata do Jornal de Minde</p>
+
 </div>
    
 </body>      

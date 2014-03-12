@@ -152,7 +152,7 @@ body
 
 </head><body>
 
-<h1>Palavras cruzadas</h1>
+<h1>palavras</h1>
 <h3 style="margin-top: -1em;"></h3>
 
 <div id="waitmessage" class="ecw-answerbox">
@@ -191,6 +191,8 @@ body
 
 <script type="text/javascript"><!--
 
+// EclipseCrossword (C) Copyright 2000-2012 Green Eclipse.
+// The puzzle itself remains the property of its creator. Do not remove this copyright notice.
 
 var BadChars = "`~!@^*()_={[}]\\|:;\"',<>/?";
 
@@ -318,7 +320,7 @@ function DeselectCurrentWord()
 	if (CurrentWord < 0) return;
 	var x, y, i;
 	
-	document.getElementById("answerbox").style.display = "nenhum";
+	document.getElementById("answerbox").style.display = "none";
 	ChangeCurrentWordSelectedStyle(false);
 	CurrentWord = -1;
 	
@@ -362,7 +364,7 @@ function SelectThisWord(event)
 	var x, y, i, TheirWord, TableCell;
 	
 	// Deselect the previous word if one was selected.
-	document.getElementById("welcomemessage").style.display = "nenhum";
+	document.getElementById("welcomemessage").style.display = "none";
 	if (CurrentWord >= 0) OKClick();
 	DeselectCurrentWord();
 	
@@ -410,17 +412,17 @@ function SelectThisWord(event)
 	}
 	
 	document.getElementById("wordlabel").innerHTML = TheirWord;
-	document.getElementById("wordinfo").innerHTML = ((CurrentWord <= LastHorizontalWord) ? "transversalmente, " : "para baixo, ") + WordLength[CurrentWord] + " letras.";
+	document.getElementById("wordinfo").innerHTML = ((CurrentWord <= LastHorizontalWord) ? "Across, " : "Down, ") + WordLength[CurrentWord] + " letters.";
 	document.getElementById("wordclue").innerHTML = Clue[CurrentWord];
-	document.getElementById("worderror").style.display = "nenhum";
-	document.getElementById("cheatbutton").style.display = (Word.length == 0) ? "nenhum" : "";
+	document.getElementById("worderror").style.display = "none";
+	document.getElementById("cheatbutton").style.display = (Word.length == 0) ? "none" : "";
 	if (TheirWordLength == WordLength[CurrentWord])
 		document.getElementById("wordentry").value = TheirWord.replace(/&AMP;/g, '&');
 	else
 		document.getElementById("wordentry").value = "";
 	
 	// Finally, show the answer box.
-	document.getElementById("answerbox").style.display = "bloquear";
+	document.getElementById("answerbox").style.display = "block";
 	try
 	{
 		document.getElementById("wordentry").focus();
@@ -448,19 +450,19 @@ function OKClick()
 	}
 	if (ContainsBadChars(TheirWord))
 	{
-		document.getElementById("worderror").innerHTML = "A palavra que você digitou contém caracteres inválidos. Favor digitar apenas as letras no quadro acima.";
+		document.getElementById("worderror").innerHTML = "The word that you typed contains invalid characters.  Please type only letters in the box above.";
 		document.getElementById("worderror").style.display = "block";
 		return;
 	}
 	if (TheirWord.length < WordLength[CurrentWord])
 	{
-		document.getElementById("worderror").innerHTML  = "Você não digitar letras em número suficiente. Esta palavra tem " + WordLength[CurrentWord] + " letras.";
+		document.getElementById("worderror").innerHTML  = "You did not type enough letters.  This word has " + WordLength[CurrentWord] + " letters.";
 		document.getElementById("worderror").style.display = "block";
 		return;
 	}
 	if (TheirWord.length > WordLength[CurrentWord])
 	{
-		document.getElementById("worderror").innerHTML = "Escreveu muitas palavras. Esta palavra tem" + WordLength[CurrentWord] + " letras.";
+		document.getElementById("worderror").innerHTML = "You typed too many letters.  This word has " + WordLength[CurrentWord] + " letters.";
 		document.getElementById("worderror").style.display = "block";
 		return;
 	}
@@ -530,11 +532,11 @@ function CheckClick()
 	
 	// If errors were found, just exit now.
 	if (ErrorsFound > 0 && EmptyFound > 0)
-		document.getElementById("welcomemessage").innerHTML = ErrorsFound + (ErrorsFound > 1 ? " erros" : " erro") + " e " + EmptyFound + (EmptyFound > 1 ? " palavras incompletas foram encontradas" : " palavra incompleta foi encontrada") + ".";
+		document.getElementById("welcomemessage").innerHTML = ErrorsFound + (ErrorsFound > 1 ? " errors" : " error") + " and " + EmptyFound + (EmptyFound > 1 ? " incomplete words were" : " incomplete word was") + " found.";
 	else if (ErrorsFound > 0)
-		document.getElementById("welcomemessage").innerHTML = ErrorsFound + (ErrorsFound > 1 ? " erros foram encontrados" : " erro foi encontrado") + ".";
+		document.getElementById("welcomemessage").innerHTML = ErrorsFound + (ErrorsFound > 1 ? " errors were" : " error was") + " found.";
 	else if (EmptyFound > 0)
-		document.getElementById("welcomemessage").innerHTML = "Não foram encontrados erros, mas " + EmptyFound + (EmptyFound > 1 ? " palavras incompletas foram encontradas" : " palavra incompleta foi encontrada") + ".";
+		document.getElementById("welcomemessage").innerHTML = "No errors were found, but " + EmptyFound + (EmptyFound > 1 ? " incomplete words were" : " incomplete word was") + " found.";
 	
 	if (ErrorsFound + EmptyFound > 0)
 	{
@@ -577,9 +579,13 @@ function HashWord(Word)
 
 <td valign="top" style="padding-left: 1em;">
 
+<div class="ecw-copyright">
+	<a href="http://www.eclipsecrossword.com/" onclick="this.target='_blank'" style="font-weight: bold;">EclipseCrossword</a> &copy; 2000-2011
+</div>
+
 <div id="welcomemessage" class="ecw-answerbox" style="display:none;">
 <h3>Bem vindo!</h3>
-<p>Clique para começar as palavras cruzadas.</p>
+<p>Click para comecar as palavras cruzadas.</p>
 </div>
 
 <div id="answerbox" class="ecw-answerbox" style="display:none;">
@@ -600,11 +606,22 @@ function HashWord(Word)
 
 </div>
 
+<div id="congratulations" class="ecw-answerbox" style="display:none;">
+<h3>Congratulations!</h3>
+<p>You have completed this <a href="http://www.eclipsecrossword.com" style="color: black; text-decoration:none;">crossword puzzle</a>.
+</p>
+<p>If you would like to be able to create interactive
+<a href="http://www.eclipsecrossword.com" style="color: black; text-decoration:none;">crosswords</a>
+like this yourself, get <a href="http://www.eclipsecrossword.com" onclick="this.target='_blank'">EclipseCrossword</a>
+from Green Eclipse&mdash;it's free!
+</p>
+</div>
+
 </td></tr></table>
 
 <div style="margin-top: 1em;">
 	<button id="checkbutton" type="button" onclick="CheckClick();" style="display: none;">Validar</button>
-<a href="jobs_exercises.html"> Voltar a pagina anterior</a>
+<a href="jobs_exercises.html" target="_blank">Voltar a pagina anterior</a>
 	</div>
 
 <script type="text/javascript"><!--
