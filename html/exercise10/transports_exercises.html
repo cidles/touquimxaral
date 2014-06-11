@@ -4,8 +4,7 @@
 <script language="JavaScript">
     function validar_respostas()
     {
-       	//validar pergunta 1
-        if (document.getElementById("p1op2").checked==true) 
+       	        if (document.getElementById("p1op2").checked==true) 
         {
             
             document.getElementById("zona_resp_p1").innerHTML = "<img src='../images/certo.png' width='15px'><b>Cópio!</b>"; 
@@ -39,8 +38,12 @@
 	{ 
 	var x=document.getElementById("p2").value.toLowerCase();
 	if(x=="Não os charales jordarem num vaz neto".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(x=="Não. os charales jordarem num vaz neto.".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(x=="Não. os charales jordarem num vaz neto".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(x=="Não os charales jordarem num vaz neto.".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+	if(x=="Não, os charales jordarem num vaz neto.".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 	if(x=="Não, os charales jordarem num vaz neto".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-	else throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Não, os charales jordarem num vaz neto</b>";
+	else throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Não, os charales jordarem num vaz neto.</b>";
 	}
 	catch(err)
 	{
@@ -103,10 +106,9 @@
 <div align="center">
     <h3>A da classe do touquim nº10</h3>
 </div>
-<p><hr width=70% align=center color=#FF4500></p> 
-
-<div style="margin-top:50px;"></div>
-<p style="margin-top:0px;margin-bottom:0px;"><b>Moinho da fonte de engenho (Ficha de exercício)</b></p>
+<p><hr align="center" color="FF4500" width="65%" height="1px" /></p>
+<br>
+<div style="text-align:center;"><b>Moinho da fonte de engenho (Ficha de exercício)</b></div><br>
 <p style="margin-top:0px;margin-bottom:0px;">1. Como é que o Paulo e a Teresa jordarem ao Segundo Casal Grande?</p>
 <br>
 <div id="zona_opcoes_p1">
@@ -125,28 +127,26 @@
 
 <div style="margin-top:30px;"></div>
 <p>3. Como jordem nas d'el-rei os covanos das alexandrinas?</p>
-<p style="margin-left:30px;"><img src="../images/bike_kid.png" width="120" height="100"> <span style="padding-right:50px;"></span>
-<img src="../images/running.png" width="120" height="100"> <span style="padding-right:50px;"></span>
+<p style="margin-left:30px;"><img src="../images/bike_kid.png" width="120" height="100"><span style="padding-right:8%;"></span>
+<img src="../images/running.png" width="120" height="100"><span style="padding-right:5%;"></span>
 <img src="../images/boat.png" width="120" height="100"></p> 
 
 <p style="margin-left:0px;">
 1<input id="p3" type="text"> <span style="padding-right:5px;"></span>
 2<input id="p6" type="text"> <span style="padding-right:5px;"></span>
 3<input id="P7" type="text"> <span style="padding-right:5px;"></span>
-<p id="mess3"style="height:50px;">&nbsp;</p>
-<p id="mess6"style="height:50px;">&nbsp;</p>
-<p id="mess7"style="height:50px;">&nbsp;</p>
-<p style="margin-top:0px;margin-bottom:0px;">4. No Ninhou mirantamos nas d'el-rei:</p>
+<p id="mess3"style="height:30px;">&nbsp;</p>
+<p id="mess6"style="height:30px;">&nbsp;</p>
+<p id="mess7"style="height:30px;">&nbsp;</p>
+<p style="margin-top:0px;margin-bottom:0px;">4. No Ninhou mirantamos nas d'el-rei:</p><br>
 <div id="zona_opcoes_p4">
 <p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="p4" id="p4op1" value="cc">rinchões</input></br>
 <p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="p4" id="p4op2" value="dc">as do aníbal</input></br>
 <p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="p5" id="p5op2" value="dc">rinchões de nisa</input><br>
 <p style="margin-top:0px;margin-bottom:0px;margin-left:30px;"><input type="radio" name="p5" id="p5op1" value="dc">andarilhos</input><br>
 </div><br>
-<div id="zona_resp_p4"style="height:50px;">&nbsp;</div>
+<div id="zona_resp_p4"style="height:30px;">&nbsp;</div>
 <div id="zona_resp_p5"style="height:50px;">&nbsp;</div>
-<div style="margin-top:20px;"></div>
-<div style="margin-top:20px;"></div>
 <div style="margin-top:20px;"></div>
 <span style="padding-left:20%"><input type="button" onclick="validar_respostas()" value="Validar"align="center">
 	<p><span style="padding-left:50%"><a href="text_transports.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise1/indice.html" ><img src="../images/indice.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise11/institutions_jobs.html"><img src="../images/play.png" border="0" align="center"></a></p>
