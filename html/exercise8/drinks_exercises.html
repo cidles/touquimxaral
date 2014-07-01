@@ -19,9 +19,9 @@
     {
         try
         { 
-            var x=document.getElementById("p5").value;
-            if(x=="brancano com o das paridas")    throw "1.<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-            else throw "1.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: brancano com o das paridas</b>";
+            var x=document.getElementById("p5").value.toLowerCase();
+            if(x=="brancano com o das paridas")    throw "1. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+            else throw "1. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: brancano com o das paridas</b>";
         }
         catch(err)
         {
@@ -30,9 +30,9 @@
         }   
         try
         { 
-            var x=document.getElementById("p6").value;
-            if(x=="regatinha de santo estêvão")    throw "2.<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-            else throw "2.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: regatinha de santo estêvão</b>";
+            var x=document.getElementById("p6").value.toLowerCase();
+            if(x=="regatinha de santo estêvão")    throw "2. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+            else throw "2. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: regatinha de santo estêvão</b>";
             
         }
         catch(err)
@@ -42,9 +42,9 @@
         } 
         try
         { 
-            var x=document.getElementById("p7").value;
-            if(x=="areeiro")    throw "3.<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-            else throw "3.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: areeiro</b>";
+            var x=document.getElementById("p7").value.toLowerCase();
+            if(x=="areeiro")    throw "3. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+            else throw "3. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: areeiro</b>";
         }
         catch(err)
         {
@@ -53,9 +53,9 @@
         } 
         try
         { 
-            var x=document.getElementById("p8").value;
-            if(x=="maltezão fusco")    throw "4.<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-            else throw "4.<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: maltezão fusco</b>";
+            var x=document.getElementById("p8").value.toLowerCase();
+            if(x=="maltezão fusco")    throw "4. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+            else throw "4. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: maltezão fusco</b>";
         }
         catch(err)
         {
@@ -64,9 +64,9 @@
         } 
         try
         { 
-            var x=document.getElementById("p9").value;
-            if(x=="Alemanha")    throw "2.1-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-            else throw "(2.1)<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Alemanha</b>";
+            var x=document.getElementById("p9").value.toLowerCase();
+            if(x=="Alemanha")    throw "2.1- <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+            else throw "(2.1) <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Alemanha</b>";
         }
         catch(err)
         {
@@ -75,9 +75,9 @@
         } 
         try
         { 
-            var x=document.getElementById("p10").value;
-            if(x=="EUA")    throw "2.2-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-            else  throw "(2.2)<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: EUA</b>";
+            var x=document.getElementById("p10").value.toLowerCase();
+            if(x=="EUA")    throw "2.2- <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+            else  throw "(2.2) <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: EUA</b>";
         }
         catch(err)
         {
@@ -86,9 +86,9 @@
         } 
         try
         { 
-            var x=document.getElementById("p11").value;
+            var x=document.getElementById("p11").value.toLowerCase();
             if(x=="Inglaterra")    throw "2.3-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-            else throw "(2.3)<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Inglaterra</b>";
+            else throw "(2.3) <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Inglaterra</b>";
 
         }
         catch(err)
@@ -98,9 +98,9 @@
         } 
         try
         { 
-            var x=document.getElementById("p12").value;
+            var x=document.getElementById("p12").value.toLowerCase();
             if(x=="China")    throw "2.4-<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-            else throw "(2.4)<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: China</b>";
+            else throw "(2.4) <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: China</b>";
         }
         catch(err)
         {
@@ -129,7 +129,7 @@
         <b>Moinho da fonte de engenho (Ficha de exercício)</b>
     </div>
     <br>
-    <div style="margin-left: 4%; margin-right: 4%">
+    <div style="margin-left: 2%; margin-right: 2%">
 
         <p align="justify">2. Miranta no moinho da fonte o que se grunhe no primeiro cavaleiro
             didi destes pregais. Gambia a do pinto lopes na do badelo do Jardim do Camões como forem jordoados os pregais onde se grunhem estes gandidos.</p>
@@ -152,7 +152,7 @@
             <INPUT type="radio" name="p3" id="p3op1" value="cc">regatinha</INPUT></br>
             <INPUT type="radio" name="p3" id="p3op2" value="dc">babosa da do tavares didi</INPUT></br>
         </div>
-        <br>
+    
         <div id="zona_opcoes_p4">
             <INPUT type="radio" name="p4" id="p4op3" value="dc">índio</INPUT><br>
             <INPUT type="radio" name="p4" id="p4op4" value="dc">mota do segundo casal grande</INPUT><br><br>
@@ -169,10 +169,10 @@
         </p>
 
         <p>
-            <input id="p5" type="text" style="width:150px;"/> <span style="padding-right:15px;"></span>
-            <input id="p6" type="text" style="width:150px;"/><span style="padding-right:15px;"></span>
-            <input id="p7" type="text" style="width:150px;"/><span style="padding-right:15px;"></span> 
-            <input id="p8" type="text" style="width:150px;"/><span style="padding-right:15px;"/>
+            1. <input id="p5" type="text" style="width:120px;"/><span style="padding-right:15px;"></span>
+            2.<input id="p6" type="text" style="width:150px;"/><span style="padding-right:15px;"></span>
+            3. <input id="p7" type="text" style="width:130px;"/><span style="padding-right:15px;"></span> 
+            4. <input id="p8" type="text" style="width:120px;"/><span style="padding-right:15px;"/>
         </p>
         <p id="mess5"style="height:50px;"/>&nbsp;
         <p id="mess6"style="height:50px;"/>&nbsp;
