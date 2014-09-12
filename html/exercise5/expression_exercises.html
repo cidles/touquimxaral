@@ -1,4 +1,4 @@
-<html>
+	<html>
 
 <head>
         <title>O Touquim Xaral</title>
@@ -14,31 +14,28 @@ function myFunction()
 try
 { 
 var x=document.getElementById("p1").value;
-if(x=="covano ancho e folacho")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="covano folacho e ancho")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="Covano ancho e folacho")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="Covano folacho e ancho")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="covano ancho e folacho")    throw "1. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="covano folacho e ancho")    throw "1. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="Covano ancho e folacho")    throw "1. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="Covano folacho e ancho")    throw "1. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano ancho e folacho</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano ancho e folacho</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano ancho e folacho</b>";
+if(isNaN(x)) throw "1. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano ancho e folacho</b>";
+if(x>10)     throw "1. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano ancho e folacho</b>";
+if(x<5)      throw "1. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano ancho e folacho</b>";
 }
 catch(err)
 {
-var y=document.getElementById("mess");
+var y=document.getElementById("mess1");
 y.innerHTML="" + err + "";
 }
 try
 { 
 var x=document.getElementById("p2").value.toLowerCase();
-if(x=="covano caga-tacos".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="covano teodorinho".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="Covano caga-tacos".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="Covano teodorinho".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="covano patarraz".toLowerCase())    throw "2. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano teodorinho</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano teodorinho</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano teodorinho</b>";
+if(isNaN(x)) throw "2. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano patarraz</b>";
+if(x>10)     throw "2. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano patarraz</b>";
+if(x<5)      throw "2. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covano patarraz</b>";
 }
 catch(err)
 {
@@ -48,12 +45,12 @@ y.innerHTML="" + err + "";
 try
 { 
 var x=document.getElementById("p3").value.toLowerCase();
-if(x=="covana jaquininha e com um talha-mar ancho pra diante".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="covana jaquininha com talha-mar ancho pra diante".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="covana jaquininha, talha-mar ancho pra diante".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana jaquininha e com um talha-mar ancho pra diante</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana jaquininha e com um talha-mar ancho pra diante</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana jaquininha e com um talha-mar ancho pra diante</b>";
+if(x=="covana jaquininha e com um talha-mar ancho pra diante".toLowerCase())    throw "3. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="covana jaquininha com talha-mar ancho pra diante".toLowerCase())    throw "3. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="covana jaquininha, talha-mar ancho pra diante".toLowerCase())    throw "3. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "3. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana jaquininha e com um talha-mar ancho pra diante</b>";
+if(x>10)     throw "3. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana jaquininha e com um talha-mar ancho pra diante</b>";
+if(x<5)      throw "3. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana jaquininha e com um talha-mar ancho pra diante</b>";
 }
 catch(err)
 {
@@ -63,11 +60,11 @@ y.innerHTML="" + err + "";
 try
 { 
 var x=document.getElementById("p4").value.toLowerCase();
-if(x=="covana com rodapé".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="covana com zé pedro".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana com rodapé / covana com zé pedro</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana com rodapé</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana com rodapé </b>";
+if(x=="covana com rodapé".toLowerCase())    throw "4. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="covana com zé pedro".toLowerCase())    throw "4. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "4. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana com rodapé / covana com zé pedro</b>";
+if(x>10)     throw "4. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana com rodapé</b>";
+if(x<5)      throw "4. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: covana com rodapé </b>";
 }
 catch(err)
 {
@@ -77,10 +74,10 @@ y.innerHTML="" + err + "";
 try
 { 
 var x=document.getElementById("p5").value.toLowerCase();
-if(x=="terraizinha a regatinhar dos mirantes".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: terraizinha a regatinhar dos mirantes</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: terraizinha a regatinhar dos mirantes</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: terraizinha a regatinhar dos mirantes</b>";
+if(x=="terraizinha a regatinhar dos mirantes".toLowerCase())    throw "5. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "5. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: terraizinha a regatinhar dos mirantes</b>";
+if(x>10)     throw "5. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: terraizinha a regatinhar dos mirantes</b>";
+if(x<5)      throw "5. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: terraizinha a regatinhar dos mirantes</b>";
 }
 catch(err)
 {
@@ -90,11 +87,11 @@ y.innerHTML="" + err + "";
 try
 { 
 var x=document.getElementById("p6").value.toLowerCase();
-if(x=="gâmbia com as arranhadoras da gâmbia anchas".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="gâmbia com arranhadoras da gâmbia anchas".toLowerCase())    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: gâmbia com as arranhadoras da gâmbia anchas</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: gâmbia com as arranhadoras da gâmbia anchas</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: gâmbia com as arranhadoras da gâmbia anchas</b>";
+if(x=="gâmbia com as arranhadoras da gâmbia anchas".toLowerCase())    throw "6. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="gâmbia com arranhadoras da gâmbia anchas".toLowerCase())    throw "6. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "6. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: gâmbia com as arranhadoras da gâmbia anchas</b>";
+if(x>10)     throw "6. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: gâmbia com as arranhadoras da gâmbia anchas</b>";
+if(x<5)      throw "6. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: gâmbia com as arranhadoras da gâmbia anchas</b>";
 }
 catch(err)
 {
@@ -109,24 +106,36 @@ y.innerHTML="" + err + "";
 </div>
 <p><hr width=70% align=center color=#FF4500></p> 
 <div style="margin-left: 8%; margin-right: 8%">
-    <p align="justify"> O Luís é patarraz, jorda curseiros à manuel fernandes, sempre teodorinhos, e é sarnudo. Só os mirantes é que jordem a da borra dos
-    	mirantes do seu ramo-figueiro. Os covanos que não penetrem nunca piem que o António e o Luís são igualados, nem ramos-figueiros.
+    <p align="justify"> O Luís é patarraz, jorda curseiros à manuel fernandes, sempre teodorinhos, e é sarnudo. Só os mirantes é que jordem a da borra dos mirantes do seu ramo-figueiro. Os covanos que não penetrem nunca piem que o António e o Luís são igualados, nem ramos-figueiros.
 </div>
 <div style="margin-top:60px;"></div>
 <p><b>Moinho da fonte de engenho (Ficha de exercício)</b></p>
 
 <div style="margin-top:20px;"></div>
 <p>O que mirantas nas alexandrinas?</p>
-<p><span style="padding-right:25px;"></span><img src="../images/folacho.png" width="60px"><br>1.<input id="p1" type="text"style="width:280px;"><p id="mess"style="height:50px;">&nbsp;</p>
-<span style="padding-right:25px;"></span><img src="../images/glasses.png" width="60px"><br>2.<input id="p2" type="text"style="width:280px;"><p></p><p id="mess2"style="height:50px;">&nbsp;</p> <br>
-
-<p><img src="../images/fat.gif" width="100px"><br>3.<input id="p3" type="text"style="width:280px;"><p></p><p id="mess3"style="height:50px;">&nbsp;</p>
-<span style="padding-right:50px;"></span><img src="../images/lips.png" width="100px"><br>4.<input id="p4" type="text"style="width:280px;"><p></p><p id="mess4"style="height:50px;">&nbsp;</p>
-<p><span style="padding-right:20px;"></span><img src="../images/cry.gif" width="80px"><br>5.<input id="p5" type="text"style="width:280px;"><p></p><p id="mess5"style="height:50px;">&nbsp;</p>
-<span style="padding-right:35px;"></span><img src="../images/nails.png" width="120px"><br>6.<input id="p6" type="text"style="width:280px;"><p></p><p id="mess6"style="height:50px;">&nbsp;</p>
+ <p>
+<span style="padding-right:15%;"></span><img src="../images/folacho.png"width="90px" height="90px"><span style="padding-right:30%;"></span>           <img src="../images/glasses.png" width="90px" height="90px"/><span style="padding-right:30px;"></span><br>
+           <span style="padding-right:10%;"></span> 1.<input id="p1" type="text">
+           <span style="padding-right:15%;"></span> 2.<input id="p2" type="text"> 
+           <p id="mess1"style="height:50px;"><p id="mess2"style="height:50px;">&nbsp;
+    
+</p>
+ <p>
+<span style="padding-right:15%;"></span><img src="../images/fat.gif"width="90px" height="90px"><span style="padding-right:30%;"></span>           <img src="../images/lips.png" width="90px" height="90px"/><span style="padding-right:30px;"></span><br>
+           <span style="padding-right:10%;"></span> 3.<input id="p3" type="text">
+           <span style="padding-right:15%;"></span> 4.<input id="p4" type="text"> 
+           <p id="mess3"style="height:50px;"><p id="mess4"style="height:50px;">&nbsp;
+    
+</p>
+ <p>
+<span style="padding-right:15%;"></span><img src="../images/cry.gif"width="90px" height="90px"><span style="padding-right:30%;"></span>           <img src="../images/nails.png" width="90px" height="90px"/><span style="padding-right:30px;"></span><br>
+           <span style="padding-right:10%;"></span> 5.<input id="p5" type="text">
+           <span style="padding-right:15%;"></span> 6.<input id="p6" type="text"> 
+           <p id="mess5"style="height:50px;"><p id="mess6"style="height:50px;">&nbsp;
+    
+</p>
 <span style="padding-left:20%"><input type="button" onclick="myFunction()" value="Validar"align="center">
 <p><span style="padding-left:51%"><a href="more_human_body.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise1/indice.html" ><img src="../images/indice.png" border="0" align="center"></a><a href="../exercise6/clothes.html"><span style="padding-left:12%"><img src="../images/play.png" border="0" align="center"></a></p>
 <p><hr align="right" color="#FF4500" width="50%" height="1px" /></p> 
 </body>
-</html>                       
-
+</html>

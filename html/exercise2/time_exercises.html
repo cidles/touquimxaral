@@ -144,13 +144,13 @@ y.innerHTML=" " + err + "";
 try
 { 
 var x=document.getElementById("p7").value;
-if(x=="Passos de escadeirar")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="passos de escadeirar")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="passos de escadeirar.")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="Passos de escadeirar.")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Passos de escadeirar.</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Passos de escadeirar/b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Passos de escadeirar</b>";
+if(x=="Passos de escadeirar")    throw "1. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="passos de escadeirar")    throw "1. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="passos de escadeirar.")    throw "1. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="Passos de escadeirar.")    throw "1. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(isNaN(x)) throw "1. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Passos de escadeirar.</b>";
+if(x>10)     throw "1. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Passos de escadeirar/b>";
+if(x<5)      throw "1. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Passos de escadeirar</b>";
 }
 catch(err)
 {
@@ -160,14 +160,14 @@ y.innerHTML=" " + err + "";
 try
 { 
 var x=document.getElementById("p8").value;
-if(x=="Passos do crestador")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="Passos do crestador.")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="passos do crestador")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-if(x=="passos do crestador.")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="Passos do crestador")    throw "2. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="Passos do crestador.")    throw "2. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="passos do crestador")    throw "2. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="passos do crestador.")    throw "2. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
 
-if(isNaN(x)) throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Passos do crestador</b>";
-if(x>10)     throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Passos do crestador</b>";
-if(x<5)      throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Passos do crestador</b>";
+if(isNaN(x)) throw "2. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Passos do crestador</b>";
+if(x>10)     throw "2. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Passos do crestador</b>";
+if(x<5)      throw "2. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: Passos do crestador</b>";
 }
 catch(err)
 {
@@ -207,8 +207,13 @@ y.innerHTML=" " + err + "";
 <input id="p6" type="text"style="width:380px;" ><p></p><p></p><p></p>
 <p id="mess6"style="height:50px;">&nbsp;</p><p></p>
 <p>7. Como foram jordoados estes passos do planeta ancho?</p>
-<p><img src="../images/tree.gif" width="120px"><br><input id="p7" type="text"style="width:180px;" ><p></p><p id="mess7"style="height:50px;">&nbsp;<br>
-<p><img src="../images/beach.png" width="120px"><br><input id="p8" type="text"style="width:180px;"><p></p><p id="mess8"style="height:50px;">&nbsp;</p>
+<p>
+<span style="padding-right:15%;"></span><img src="../images/tree.gif"width="90px" height="90px"><span style="padding-right:30%;"></span>           <img src="../images/beach.png" width="90px" height="90px"/><span style="padding-right:30px;"></span><br>
+           <span style="padding-right:10%;"></span> 1.<input id="p7" type="text">
+           <span style="padding-right:15%;"></span> 2.<input id="p8" type="text"> 
+           <p id="mess7"style="height:50px;"><p id="mess8"style="height:50px;">&nbsp;
+    
+</p>
 <br>
 <span style="padding-left:20%"><input type="button" onclick="myFunction()" value="Validar"align="center">
 <br>

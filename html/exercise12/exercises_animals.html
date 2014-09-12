@@ -11,12 +11,6 @@
     function validar_respostas()
     {
    
-       // lista_certas="";
-        //lista_erradas="";
-        //respostas_certas=0;
-        //respostas_erradas=0;
-
-		
         //validar pergunta 1
         if (document.getElementById("p1op3").checked==true) 
         {
@@ -30,8 +24,9 @@
 try
 { 
 var x=document.getElementById("p1").value.toLowerCase();
- if(x=="agoirento")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-else throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: agoirento</b>";
+ if(x=="agoirento")    throw "1. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+ if(x=="agoirento.")    throw "1. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+else throw "1. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: agoirento</b>";
 }
 catch(err)
 {
@@ -41,8 +36,9 @@ y.innerHTML="" + err + "";
 try
 { 
 var x=document.getElementById("p2").value.toLowerCase();
-if(x=="cabaneira")throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-else throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cabaneira</b>" ;
+if(x=="cabaneira")throw "2. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="cabaneira.")throw "2. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+else throw "2. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: cabaneira</b>" ;
 }
 catch(err)
 {
@@ -52,8 +48,9 @@ y.innerHTML=" " + err + "";
 try
 { 
 var x=document.getElementById("p3").value.toLowerCase();
-if(x=="sequeiro")    throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-else throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: sequeiro</b>" ;
+if(x=="sequeiro")    throw "3. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+if(x=="sequeiro.")    throw "3. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+else throw "3- <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: sequeiro</b>" ;
 }
 catch(err)
 {
@@ -63,8 +60,8 @@ y.innerHTML=" " + err + "";
 try
 { 
 var x=document.getElementById("p4").value.toLowerCase();
-if(x=="salteador")throw "<img src='../images/certo.png' width='15px'><b>Cópio!<b>";
-else throw "<img src='../images/errado.png' width='15px'><b>Didi, resposta certa: salteador</b>" ;
+if(x=="salteador")throw "4. <img src='../images/certo.png' width='15px'><b>Cópio!<b>";
+else throw "4. <img src='../images/errado.png' width='15px'><b>Didi, resposta certa: salteador</b>" ;
 }
 catch(err)
 {
@@ -98,20 +95,25 @@ y.innerHTML=" " + err + "";
 </div><br>
 <div id="zona_resp_p1"style="height:50px;">&nbsp;</div>
 
-<p>2. Como foram jordoados os do noé das alexandrinas?</p>    
-<p><img src="../images/eagle_owl.png" width="80"><br>1.<input id="p1" type="text"><p></p><p id="mess1"style="height:50px;">&nbsp;</p>
-<span style="margin-top:50px;"></span>
-<img src="../images/cow.png" width="150"><br>2.<input id="p2" type="text"><p id="mess2"style="height:50px;">&nbsp;</p></p>  
-<div style="margin-top:30px;"></div>
-<p><img src="../images/cat.png" width="90"><br>3.<input id="p3" type="text"><p id="mess3"style="height:50px;">&nbsp;</p><span style="margin-top:30px;"></span>
-<img src="../images/frog.png" width="150"><br>4.<input id="p4" type="text"><p id="mess4"style="height:50px;">&nbsp;</p> </p>  
-
+<p>2. Como forem jordoados os do noé das alexandrinas?</p> 
+ <p>
+<span style="padding-right:15%;"></span><img src="../images/eagle_owl.png"width="90px" height="90px"><span style="padding-right:30%;"></span>           <img src="../images/cow.png" width="90px" height="90px"/><span style="padding-right:30px;"></span><br>
+           <span style="padding-right:10%;"></span> 1.<input id="p1" type="text">
+           <span style="padding-right:15%;"></span> 2.<input id="p2" type="text"> 
+           <p id="mess1"style="height:50px;"><p id="mess2"style="height:50px;">&nbsp;
+    
+</p>
+ <p>
+<span style="padding-right:15%;"></span><img src="../images/cat.png"width="90px" height="90px"><span style="padding-right:30%;"></span>           <img src="../images/frog.png" width="90px" height="90px"/><span style="padding-right:30px;"></span><br>
+           <span style="padding-right:10%;"></span> 3.<input id="p3" type="text">
+           <span style="padding-right:15%;"></span> 4.<input id="p4" type="text"> 
+           <p id="mess3"style="height:50px;"><p id="mess4"style="height:50px;">&nbsp;
+    
+</p>
 <div style="margin-top:20px;"></div>
-
-<p>3.Qual a do noé de que és antónio forno ancho?</p>
+<p>3.Qual o do noé de que és antónio forno ancho?</p>
 <p><textarea rows="1" cols="80"></textarea> </p>
 <div style="margin-top:30px;"></div>
-
 <span style="padding-left:20%"><input type="button" onclick="validar_respostas()" value="Validar"align="center">
 <p><span style="padding-left:50%"><a href="text_animals.html" ><img src="../images/play2.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise1/indice.html" ><img src="../images/indice.png" border="0" align="center"></a><span style="padding-left:12%"><a href="../exercise13/money_numbers.html" ><img src="../images/play.png" border="0" align="center"></a></p>
 <p><hr align="right" color="#FF4500" width="50%" height="1px" /></p> 
